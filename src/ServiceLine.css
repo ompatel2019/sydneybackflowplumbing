@@ -1,0 +1,31 @@
+/* Keyframes for the sliding effect */
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Container that holds the sliding text */
+  .services-scroll {
+    overflow: hidden; /* Hides any overflowing content */
+    background-color: #2459b7;
+  }
+  
+  /* Scrolling content that is animated */
+  .scrolling-content {
+    display: flex;
+    width: 200%; /* Double the width for seamless scrolling */
+    animation: scroll 20s linear infinite;
+  }
+  
+  /* Individual service items that will slide */
+  .service-item {
+    flex: 0 0 auto; /* Prevents items from shrinking */
+    padding: 0.5rem;
+    color: white;
+    background-color: #2459b7;
+  }
+  

@@ -3,6 +3,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 // ─── Sections ───────────────────────────────────────────────────────────
+import ServicesLine from '../components/ServicesLine';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import WhyChooseUs from '../components/WhyChooseUs';
@@ -33,6 +34,7 @@ const HomePage = () => {
       </Helmet>
 
       {/* ─── Sections ───────────────────────────────────────────── */}
+      <ServicesLine />
       <Hero />
       <Services />
       <WhyChooseUs />
