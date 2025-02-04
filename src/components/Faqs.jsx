@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const Faqs = () => {
@@ -33,8 +33,8 @@ const Faqs = () => {
     }
   ];  
 
-  const sectionHeading = 'FAQs'
-  const sectionDescription = "Your questions, answered."
+  const sectionHeading = 'FAQs';
+  const sectionDescription = "Your questions, answered.";
   const [activeFaqIndex, setFaqActive] = useState(null);
 
   const toggleFaq = (index) => {
@@ -48,15 +48,15 @@ const Faqs = () => {
       aria-label="faq-section"
     >
       <div className='space-y-4 text-center'>
-              <h2 className='h2 font-satoshi-black'>
-                {sectionHeading}
-              </h2>
-              <p className='h7 font-satoshi-medium'>
-                {sectionDescription}
-              </p>
+        <h2 className='h2 font-satoshi-black'>
+          {sectionHeading}
+        </h2>
+        <p className='h7 font-satoshi-medium'>
+          {sectionDescription}
+        </p>
       </div>
 
-      <div className=''>
+      <div>
         {faqs.map((faq, faqIndex) => {
           const isActive = activeFaqIndex === faqIndex;
           return (
@@ -65,14 +65,18 @@ const Faqs = () => {
               className="py-10 md:py-8 max-md:py-6 border-b-2 flex flex-col h7 space-y-4"
             >
               <div className="flex justify-between items-top max-md:items-center">
-                {/* Convert the entire row into a button for better accessibility */}
+                {/* Button for better accessibility */}
                 <button
                   type="button"
                   className="flex-1 text-left"
                   onClick={() => toggleFaq(faqIndex)}
                   aria-expanded={isActive}
                   aria-controls={`faq-answer-${faqIndex}`}
-                  aria-label={isActive ? `Collapse answer ${faqIndex + 1}` : `Expand answer ${faqIndex + 1}`}
+                  aria-label={
+                    isActive 
+                      ? `Collapse answer ${faqIndex + 1}` 
+                      : `Expand answer ${faqIndex + 1}`
+                  }
                 >
                   <h3>
                     {faqIndex + 1}. {faq.question}
@@ -108,7 +112,7 @@ const Faqs = () => {
         })}
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Faqs;

@@ -8,6 +8,7 @@ const HeroWrapper = () => {
         src={heroImg}
         alt="Hero Background"
         className='w-full h-full object-cover'
+        loading="lazy"
       />
     </div>
   );

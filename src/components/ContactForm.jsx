@@ -59,56 +59,20 @@ const ContactForm = () => {
   const inputFieldClass =
     'p-2 px-4 rounded-sm focus:border-c-1 focus:outline-none text-c-5-0 w-full hover:px-6 transition-all bg-transparent border-b-2';
 
-  const inputFields = [
-    {
-      label: 'Name',
-      type: 'text',
-      id: 'name',
-      name: 'name',
-      placeholder: 'Full Name*',
-      className: inputFieldClass,
-    },
-    {
-      label: 'Contact',
-      type: 'text',
-      id: 'contact',
-      name: 'contact',
-      placeholder: 'Contact No.*',
-      className: inputFieldClass,
-    },
-    {
-      label: 'Email',
-      type: 'email',
-      id: 'email',
-      name: 'email',
-      placeholder: 'Email',
-      className: inputFieldClass,
-    },
-    {
-      label: 'Message',
-      type: 'textarea',
-      id: 'message',
-      name: 'message',
-      placeholder: 'Inquiry*',
-      className: inputFieldClass,
-      rows: 5,
-    },
-  ];
-
   const sectionHeading = 'Get in touch';
-  const sectionDescription = 'We will get back to you as soon as possible!'
+  const sectionDescription = 'We will get back to you as soon as possible!';
 
   return (
     <>
       <section className="responsivePad bg-primary-0 2xl:py-32 lg:py-24 md:py-20 py-12 text-white-0 space-y-12 max-md:space-y-4 p">
-          <div className='space-y-4 text-center'>
-            <h2 className='h2 font-satoshi-black'>
-              {sectionHeading}
-            </h2>
-            <p className='h7 font-satoshi-medium'>
-              {sectionDescription}
-            </p>
-          </div>
+        <div className='space-y-4 text-center'>
+          <h2 className='h2 font-satoshi-black'>
+            {sectionHeading}
+          </h2>
+          <p className='h7 font-satoshi-medium'>
+            {sectionDescription}
+          </p>
+        </div>
 
         <div className="flex space-x-4 max-md:hidden responsivePad">
           {perks.map((perk, perkIndex) => (
@@ -117,7 +81,7 @@ const ContactForm = () => {
               className="flex flex-col w-full justify-center items-center rounded-2xl py-4 px-4"
             >
               <div className="rounded-full p-6">
-                <perk.image className='h4'/>
+                <perk.image className='h4' aria-hidden="true" />
               </div>
 
               <div className="space-y-2">
@@ -144,7 +108,7 @@ const ContactForm = () => {
               name="name" 
               placeholder='Full Name*' 
               className={inputFieldClass} 
-              />
+            />
 
             <input 
               required 
@@ -153,26 +117,26 @@ const ContactForm = () => {
               name="contact" 
               placeholder='Contact No.*' 
               className={inputFieldClass} 
-              />
+            />
           </div>
-            <input 
-              type="email" 
-              id="email" 
-              name="email" 
-              placeholder='Email' 
-              className={inputFieldClass} 
-              />
-              <textarea
-                required
-                id= "message"
-                name="message"
-                placeholder="Inquiry*"
-                className= {`${inputFieldClass} `}
-                rows="10"
-              />
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder='Email' 
+            className={inputFieldClass} 
+          />
+          <textarea
+            required
+            id="message"
+            name="message"
+            placeholder="Inquiry*"
+            className={`${inputFieldClass}`}
+            rows="10"
+          />
           <button className="bg-white-0 flex items-center p-4 space-x-2 font-medium rounded-sm px-6 w-full justify-center hover:bg-black-0 transition-colors hover:text-white-0 font-satoshi-medium text-black-0">
             <p>Send Inquiry</p>
-            <FaRegPaperPlane/>
+            <FaRegPaperPlane aria-hidden="true" />
           </button>
         </form>
       </section>

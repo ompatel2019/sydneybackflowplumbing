@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import HeroWrapper from './HeroWrapper.jsx';
 import { HashLink } from 'react-router-hash-link';
 import { FaStar } from "react-icons/fa";
@@ -6,13 +6,16 @@ import { FaStar } from "react-icons/fa";
 const Hero = () => {
   const topText = 'Sydney Backflow and Plumbing';
   const heroText = 'Plumbing Experts in Sydney';
-  const heroSubtext = 'Eget mi proin sed libero. Egestas sed sed risus pretium quam vulputate dignissim. Tincidunt vitae semper quis lectus nulla at volutpat diam.'
-  const bottomText = 'Only 5-Star Reviews On Google'
+
+  const heroSubtext = 
+    'We provide top-tier plumbing solutions for every property in the region, ensuring your water flows smoothly—from blocked drains to hot water systems. Our licensed team is dedicated to delivering reliable service around the clock, so you can rest easy knowing your plumbing is in expert hands.';
+
+  const bottomText = 'Only 5-Star Reviews On Google';
 
   const buttons = [
-    {button: 'Get A Quote', buttonRed: '/contact'},
-    {button: 'Learn More', buttonRed: '/services'},
-  ]
+    { button: 'Get A Quote', buttonRed: '/contact' },
+    { button: 'Learn More', buttonRed: '/services' },
+  ];
 
   return (
     <>
@@ -47,11 +50,11 @@ const Hero = () => {
               <HashLink 
                 key={buttonKey} 
                 smooth 
-                to={button.buttonRed} 
+                to={button.buttonRed}
                 className={
                   buttonKey === 0 
-                    ? `bg-primary-0 px-6 p-2 rounded-[4px] hover:px-10 transition-all` 
-                    : `bg-white-0 px-6 p-2 rounded-[4px] text-black-0 hover:px-10 transition-all`
+                    ? `bg-primary-0 px-6 p-3 rounded-[4px] hover:px-10 transition-all font-satoshi-medium` 
+                    : `bg-white-0 px-6 p-3 rounded-[4px] text-black-0 hover:px-10 transition-all font-satoshi-medium`
                 }
               >
                 {button.button}
@@ -61,11 +64,11 @@ const Hero = () => {
 
           <div className='flex space-x-2 items-center p'>
             <div className='flex text-yellow-400'>
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
-              <FaStar />
+              <FaStar aria-hidden="true" />
+              <FaStar aria-hidden="true" />
+              <FaStar aria-hidden="true" />
+              <FaStar aria-hidden="true" />
+              <FaStar aria-hidden="true" />
             </div>
             <p className='font-semibold'>
               {bottomText}
@@ -74,7 +77,7 @@ const Hero = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

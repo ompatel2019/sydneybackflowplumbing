@@ -1,10 +1,10 @@
-import React from 'react'
-import blogImageSample from '../images/blogImageSample.jpg'
-import { HashLink } from 'react-router-hash-link'
+import React from 'react';
+import blogImageSample from '../images/blogImageSample.jpg';
+import { HashLink } from 'react-router-hash-link';
 
 const Blogs = () => {
-  const sectionHeading = 'Blogs & Articals'
-  const sectionDescription = "Read Our Latest Blogs"
+  const sectionHeading = 'Blogs & Articles';
+  const sectionDescription = "Read Our Latest Blogs";
 
   const blogs = [
     {
@@ -33,7 +33,6 @@ const Blogs = () => {
     }
   ];
   
-
   return (
     <section 
       id="faqs"
@@ -41,19 +40,26 @@ const Blogs = () => {
       aria-label="faq-section"
     >
       <div className='space-y-4 text-center'>
-              <h2 className='h2 font-satoshi-black'>
-                {sectionHeading}
-              </h2>
-              <p className='h7 font-satoshi-medium'>
-                {sectionDescription}
-              </p>
+        <h2 className='h2 font-satoshi-black'>
+          {sectionHeading}
+        </h2>
+        <p className='h7 font-satoshi-medium'>
+          {sectionDescription}
+        </p>
       </div>
 
       {/* BLOGS */}
       <div className='grid grid-cols-3 gap-8 max-md:grid-cols-1'>
         {blogs.map((blog, blogIndex) => (
           <div key={blogIndex} className='flex flex-col justify-between space-y-2'>
-            <img src={blog.blogImage} alt={blog.blogTitle} width={400} height={400} loading='lazy' className='rounded-md w-full md:max-h-[480px]' />
+            <img 
+              src={blog.blogImage} 
+              alt={blog.blogTitle} 
+              width={400} 
+              height={400} 
+              loading='lazy' 
+              className='rounded-md w-full md:max-h-[480px]' 
+            />
             <p className='italic text-base'>{blog.blogType}</p>
             <HashLink smooth to={blog.blogTo}>
               <h4 className='p font-bold'>{blog.blogTitle}</h4>
@@ -62,11 +68,10 @@ const Blogs = () => {
             <p className='text-xs'>{blog.blogReleaseDuration}</p>
           </div>
         ))}
-
       </div>
 
     </section>
-  )
-}
+  );
+};
 
-export default Blogs
+export default Blogs;

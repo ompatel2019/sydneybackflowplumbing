@@ -1,8 +1,8 @@
 // pages/HomePage.jsx
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SeoHelmet from '../components/SeoHelmet';
 
-// ─── Sections ───────────────────────────────────────────────────────────
+// ─── Sections ─────────────────────────────────────────────────────
 import ServicesLine from '../components/ServicesLine';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
@@ -15,31 +15,29 @@ import Faqs from '../components/Faqs';
 import ContactDetails from '../components/ContactDetails';
 
 const HomePage = () => {
-  // ─── Schema for Home Page ──────────────────────────────────────────────
+  // ─── Schema for Home Page ─────────────────────────────────
   const jsonLdHomePage = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Home - Business Name",
-    "description": "Welcome to Business Name. Customize your homepage description here.",
+    "name": "Home - Sydney Backflow & Plumbing",
+    "description": "Welcome to Sydney Backflow & Plumbing. Customize your homepage description here.",
     "url": "https://example.com/"
   };
 
   return (
     <>
-      <Helmet>
-        <title>Home - Business Name</title>
-        <meta name="description" content="Welcome to Business Name. Customize your homepage description here." />
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLdHomePage)}
-        </script>
-      </Helmet>
+      <SeoHelmet
+        title="Home - Sydney Backflow & Plumbing"
+        description="Welcome to Sydney Backflow & Plumbing. Customize your homepage description here."
+        jsonSchema={jsonLdHomePage}
+      />
 
-      {/* ─── Sections ───────────────────────────────────────────── */}
+      {/* ─── Sections ─────────────────────────────────────────── */}
       <ServicesLine />
       <Hero />
       <Services />
       <WhyChooseUs />
-      <ContactDetails/>
+      <ContactDetails />
       <ContactForm />
       <Testimonials />
       <AboutUs />

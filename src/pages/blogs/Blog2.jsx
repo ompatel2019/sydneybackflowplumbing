@@ -1,9 +1,9 @@
 // pages/blogs/Blog2.jsx
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SeoHelmet from '../../components/SeoHelmet';
 
 const Blog2 = () => {
-  // ─── Schema for Blog Post ────────────────────────────────────────────
+  // ─── Schema for Blog Post ──────────────────────────────
   const jsonLdBlogPost = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -19,15 +19,13 @@ const Blog2 = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Blog Post 2 - Business Name</title>
-        <meta name="description" content="Summary of blog post 2." />
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLdBlogPost)}
-        </script>
-      </Helmet>
+      <SeoHelmet
+        title="Blog Post 2 - Business Name"
+        description="Summary of blog post 2."
+        jsonSchema={jsonLdBlogPost}
+      />
 
-      {/* ─── Blog Content ───────────────────────────────────────────── */}
+      {/* ─── Blog Content ───────────────────────────────────── */}
       <article>
         <h1>Blog Post 2 Title</h1>
         <p>Content for Blog Post 2 goes here...</p>

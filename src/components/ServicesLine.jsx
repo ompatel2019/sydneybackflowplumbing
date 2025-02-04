@@ -1,5 +1,5 @@
 import React from 'react';
-import '../ServiceLine.css'
+import '../ServiceLine.css';
 import { HashLink } from 'react-router-hash-link';
 
 const ServicesLine = () => {
