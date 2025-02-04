@@ -26,27 +26,27 @@ const ContactForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
 
+  // This function manually sends a POST request to Netlify
+  // while still letting Netlify identify and store the form submission.
   const onSubmit = async (event) => {
     event.preventDefault();
+
+    // Collect all form fields
     const formData = new FormData(event.target);
-    // formData.append('access_key', 'a8e0995a-e8dd-496e-829e-e803772adc30');
-    formData.append('access_key', '5f68f9ec-670e-49f1-9f64-75951fc7c6fc');
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
 
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: json,
-    }).then((res) => res.json());
-
-    if (res.success) {
+    try {
+      // Send the form data to Netlify
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+      
+      // If successful, show the success message
       setIsSubmitted(true);
       event.target.reset();
 
+      // Fade out the success message after a short delay
       setTimeout(() => {
         setFadeOut(true);
         setTimeout(() => {
@@ -54,6 +54,10 @@ const ContactForm = () => {
           setFadeOut(false);
         }, 1000);
       }, 2000);
+
+    } catch (error) {
+      console.error("Form submission error: ", error);
+      // Optionally, handle errors or display a message to the user
     }
   };
 
@@ -65,7 +69,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <section className="responsivePad bg-primary-0 2xl:py-32 lg:py-24 md:py-20 py-12 text-white-0 space-y-12 max-md:space-y-4 p">
+      <section className="responsivePad bg-primary-0 2xl:py-32 lg:py-24 md:py-20 py-12 text-white-0 space-y-12 max-md:space-y-4">
         <div className='space-y-4 text-center'>
           <h2 className='h2 font-satoshi-black'>
             {sectionHeading}
@@ -75,6 +79,7 @@ const ContactForm = () => {
           </p>
         </div>
 
+        {/* Perks (static row) */}
         <div className="flex space-x-4 max-md:hidden responsivePad">
           {perks.map((perk, perkIndex) => (
             <div
@@ -84,23 +89,25 @@ const ContactForm = () => {
               <div className="rounded-full p-6">
                 <perk.image className='h4' aria-hidden="true" />
               </div>
-
-              <div className="space-y-2">
-                <h3 className="h7 font-satoshi-bold text-center">
-                  {perk.header}
-                </h3>
-                <p className="text-center font-satoshi lg:hidden">
-                  {perk.description}
-                </p>
-                <p className="text-center font-satoshi max-lg:hidden">
-                  {perk.extendedDescription}
-                </p>
+              <div className="space-y-2 text-center">
+                <h3 className="h7 font-satoshi-bold">{perk.header}</h3>
+                <p className="font-satoshi">{perk.extendedDescription}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <form className="text-c-3-0 space-y-8 responsivePad" onSubmit={onSubmit} netlify name='contact'>
+        {/* Netlify form */}
+        <form
+          className="text-c-3-0 space-y-8 responsivePad"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          onSubmit={onSubmit}
+        >
+          {/* IMPORTANT: hidden form-name input */}
+          <input type="hidden" name="form-name" value="contact" />
+
           <div className='flex space-x-4'>
             <input 
               required 
@@ -110,7 +117,6 @@ const ContactForm = () => {
               placeholder='Full Name*' 
               className={inputFieldClass} 
             />
-
             <input 
               required 
               type="text" 
@@ -132,7 +138,7 @@ const ContactForm = () => {
             id="message"
             name="message"
             placeholder="Inquiry*"
-            className={`${inputFieldClass}`}
+            className={inputFieldClass}
             rows="10"
           />
           <button className="bg-white-0 flex items-center p-4 space-x-2 font-medium rounded-sm px-6 w-full justify-center hover:bg-black-0 transition-colors hover:text-white-0 font-satoshi-medium text-black-0">
@@ -140,6 +146,20 @@ const ContactForm = () => {
             <FaRegPaperPlane aria-hidden="true" />
           </button>
         </form>
+
+        {/* Simple success message overlay (optional) */}
+        {isSubmitted && (
+          <div
+            className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center transition-opacity ${
+              fadeOut ? 'opacity-0' : 'opacity-100'
+            }`}
+          >
+            <div className="bg-white p-8 rounded shadow-md text-black">
+              <h3 className="text-xl font-bold">Thank you!</h3>
+              <p>Your inquiry has been sent. We will contact you soon.</p>
+            </div>
+          </div>
+        )}
       </section>
     </>
   );
