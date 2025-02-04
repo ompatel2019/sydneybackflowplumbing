@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Testimonials from '../components/Testimonials';
 import CTA from '../components/CTA';
+import PageTitle from '../components/PageTitle';
 
 const WhyChooseUsPage = () => {
   // ─── Schema for Why Choose Us Page ─────────────────────────────────────
@@ -28,6 +29,7 @@ const WhyChooseUsPage = () => {
       </Helmet>
 
       {/* ─── Sections ───────────────────────────────────────────── */}
+      <PageTitle/>
       <WhyChooseUs />
       <Testimonials />
       <CTA />

@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet';
 // ─── Components for Blogs Page ───────────────────────────────────────
 import Blogs from '../components/Blogs';
 import CTA from '../components/CTA';
+import PageTitle from '../components/PageTitle';
 
 const BlogsPage = () => {
   // ─── Schema for Blogs Page ───────────────────────────────────────────
@@ -27,6 +28,7 @@ const BlogsPage = () => {
       </Helmet>
 
       {/* ─── Sections ───────────────────────────────────────────── */}
+      <PageTitle/>
       <Blogs />
       <CTA />
     </>

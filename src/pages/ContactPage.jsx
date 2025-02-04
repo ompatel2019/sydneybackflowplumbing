@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet';
 import ContactForm from '../components/ContactForm';
 import Faqs from '../components/Faqs';
 import CTA from '../components/CTA';
+import PageTitle from '../components/PageTitle';
 
 const ContactPage = () => {
   // ─── Schema for Contact Page ─────────────────────────────────────────
@@ -28,6 +29,7 @@ const ContactPage = () => {
       </Helmet>
 
       {/* ─── Sections ───────────────────────────────────────────── */}
+      <PageTitle/>
       <ContactForm />
       <Faqs />
       <CTA />

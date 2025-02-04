@@ -7,6 +7,7 @@ import AboutUs from '../components/AboutUs';
 import Testimonials from '../components/Testimonials';
 import Faqs from '../components/Faqs';
 import CTA from '../components/CTA';
+import PageTitle from '../components/PageTitle';
 
 const AboutUsPage = () => {
   // ─── Schema for About Us Page ─────────────────────────────────────────
@@ -29,6 +30,7 @@ const AboutUsPage = () => {
       </Helmet>
 
       {/* ─── Sections ───────────────────────────────────────────── */}
+      <PageTitle/>
       <AboutUs />
       <Testimonials />
       <Faqs />
