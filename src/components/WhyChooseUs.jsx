@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
             <img src={job} alt="Why Choose Us section image" className='w-full h-full rounded-[4px]'/>
           </div>
 
-          <div className='text-black-0 space-y-8 max-md:space-y-6'>
+          <div className='text-black-0 space-y-8 max-md:space-y-6 flex flex-col justify-around'>
               <h2 className='h2 font-satoshi-black'>
                 {sectionHeading}
               </h2>

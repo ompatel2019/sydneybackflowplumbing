@@ -12,6 +12,7 @@ import Testimonials from '../components/Testimonials';
 import ContactForm from '../components/ContactForm';
 import Blogs from '../components/Blogs';
 import Faqs from '../components/Faqs';
+import ContactDetails from '../components/ContactDetails';
 
 const HomePage = () => {
   // ─── Schema for Home Page ──────────────────────────────────────────────
@@ -38,9 +39,10 @@ const HomePage = () => {
       <Hero />
       <Services />
       <WhyChooseUs />
-      <AboutUs />
-      <Testimonials />
+      <ContactDetails/>
       <ContactForm />
+      <Testimonials />
+      <AboutUs />
       <Blogs />
       <Faqs />
     </>

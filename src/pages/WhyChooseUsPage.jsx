@@ -29,10 +29,10 @@ const WhyChooseUsPage = () => {
       </Helmet>
 
       {/* ─── Sections ───────────────────────────────────────────── */}
-      <PageTitle/>
+      <PageTitle pageTitle='Why Choose Us' pageRoute='home / why choose us' dividerBackground='bg-white-0' dividerFill='#2A2A2A' backgroundColour='bg-black-0' textColour='text-white-0'/>
       <WhyChooseUs />
       <Testimonials />
-      <CTA />
+      <CTA backgroundColour='bg-primary-0' textColour='text-white-0'/>
     </>
   );
 };

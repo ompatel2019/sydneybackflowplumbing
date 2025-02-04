@@ -28,9 +28,9 @@ const BlogsPage = () => {
       </Helmet>
 
       {/* ─── Sections ───────────────────────────────────────────── */}
-      <PageTitle/>
+      <PageTitle pageTitle='Blogs' pageRoute='home / blogs' dividerBackground='bg-white-0' dividerFill='#2A2A2A' backgroundColour='bg-black-0' textColour='text-white-0'/>
       <Blogs />
-      <CTA />
+      <CTA backgroundColour='bg-primary-0' textColour='text-white-0'/>
     </>
   );
 };

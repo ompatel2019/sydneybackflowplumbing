@@ -31,7 +31,7 @@ const Topbar = () => {
 
   return (
     <>
-      <div className='bg-black-0 responsivePad py-4 flex justify-between font-satoshi-medium text-white-0'>
+      <div className='bg-primary-0 responsivePad py-4 flex justify-between font-satoshi-medium text-white-0'>
 
         <div className='flex space-x-2'>
           {

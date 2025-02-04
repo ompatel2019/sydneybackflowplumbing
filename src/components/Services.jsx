@@ -52,7 +52,7 @@ const Services = () => {
 
   return (
     <>
-      <section className='responsivePad bg-black-0 2xl:py-32 lg:py-24 md:py-20 py-12 text-white-0 space-y-12 max-md:space-y-4'>
+      <section className='responsivePad bg-primary-0 2xl:py-32 lg:py-24 md:py-20 py-12 text-white-0 space-y-12 max-md:space-y-4'>
         <div className='space-y-4'>
           <h2 className='h2 font-satoshi-black'>
             {sectionHeading}
@@ -66,7 +66,7 @@ const Services = () => {
         <div className='grid grid-cols-3 max-md:grid-cols-2 lg:gap-12 gap-2'>
           {
             services.map((service, serviceIndex) => (
-              <div className='bg-black-0 px-4 py-8 rounded-md  font-satoshi-medium h7 flex justify-center items-center flex-col space-y-4 hover:translate-y-[-15px] hover:invert transition-all'>
+              <div className=' px-4 py-8 rounded-md  font-satoshi-medium h7 flex justify-center items-center flex-col space-y-4 hover:translate-y-[-15px] hover:invert transition-all'>
                 <img className='max-md:h-12 max-md:w-12 rounded-lg' key={serviceIndex} src={service.serviceImg} alt={service.serviceName + 'Image'} />
                 <h3 className='h6 text-center'>{service.serviceName}</h3>
                 <p className='text-center p max-md:hidden'>{service.serviceDesc}</p>

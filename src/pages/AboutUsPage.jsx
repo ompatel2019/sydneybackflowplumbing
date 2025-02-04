@@ -30,11 +30,11 @@ const AboutUsPage = () => {
       </Helmet>
 
       {/* ─── Sections ───────────────────────────────────────────── */}
-      <PageTitle/>
+      <PageTitle pageTitle='About Us' pageRoute='home / about us' dividerBackground='bg-white-0' dividerFill='#2A2A2A' backgroundColour='bg-black-0' textColour='text-white-0'/>
       <AboutUs />
+      <CTA backgroundColour='bg-primary-0' textColour='text-white-0'/>
       <Testimonials />
       <Faqs />
-      <CTA />
     </>
   );
 };

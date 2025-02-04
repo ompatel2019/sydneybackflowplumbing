@@ -7,6 +7,7 @@ import ContactForm from '../components/ContactForm';
 import Faqs from '../components/Faqs';
 import CTA from '../components/CTA';
 import PageTitle from '../components/PageTitle';
+import ContactDetails from '../components/ContactDetails';
 
 const ContactPage = () => {
   // ─── Schema for Contact Page ─────────────────────────────────────────
@@ -29,10 +30,11 @@ const ContactPage = () => {
       </Helmet>
 
       {/* ─── Sections ───────────────────────────────────────────── */}
-      <PageTitle/>
+      <PageTitle pageTitle='Contact Us' pageRoute='home / contact' dividerBackground='bg-primary-0' dividerFill='#FAFAFA' backgroundColour='bg-white-0' textColour='text-black-0'/>
       <ContactForm />
+      <ContactDetails />
+      <CTA backgroundColour='bg-white-0' textColour=''/>
       <Faqs />
-      <CTA />
     </>
   );
 };

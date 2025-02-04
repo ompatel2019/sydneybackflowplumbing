@@ -28,9 +28,9 @@ const ServicesPage = () => {
       </Helmet>
 
       {/* ─── Sections ───────────────────────────────────────────── */}
-      <PageTitle/>
-      <Services />
-      <CTA />
+      <PageTitle pageTitle='Services' pageRoute='home / services' dividerBackground='bg-primary-0' dividerFill='#FAFAFA' backgroundColour='bg-white-0' textColour='text-black-0'/>
+      <Services/>
+      <CTA backgroundColour='bg-black-0' textColour='text-white-0'/>
     </>
   );
 };

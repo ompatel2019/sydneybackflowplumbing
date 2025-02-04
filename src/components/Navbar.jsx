@@ -22,7 +22,7 @@ const Navbar = () => {
     <>
       {/* Desktop + Mobile Navbar */}
       <header
-      className={`responsivePad py-6 flex justify-between font-satoshi-medium items-center sticky top-0 z-50 ${showMenu ? 'bg-black-0' : 'bg-white-0'}`}
+      className={`responsivePad py-4 flex justify-between font-satoshi-medium items-center sticky top-0 z-50 ${showMenu ? 'bg-black-0' : 'bg-white-0'}`}
       >
         <p>Insert logo here...</p>
 
