@@ -29,7 +29,8 @@ const ContactForm = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-    formData.append('access_key', 'a8e0995a-e8dd-496e-829e-e803772adc30');
+    // formData.append('access_key', 'a8e0995a-e8dd-496e-829e-e803772adc30');
+    formData.append('access_key', '5f68f9ec-670e-49f1-9f64-75951fc7c6fc');
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
@@ -99,7 +100,7 @@ const ContactForm = () => {
           ))}
         </div>
 
-        <form className="text-c-3-0 space-y-8 responsivePad" onSubmit={onSubmit}>
+        <form className="text-c-3-0 space-y-8 responsivePad" onSubmit={onSubmit} netlify name='contact'>
           <div className='flex space-x-4'>
             <input 
               required 
