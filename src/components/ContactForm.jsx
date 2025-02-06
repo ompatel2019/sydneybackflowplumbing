@@ -100,6 +100,7 @@ const ContactForm = () => {
         data-netlify="true"        // 3) Tells Netlify to process it
         onSubmit={handleSubmit}    // We'll override default POST so we can do no-reload
         className='responsivePad'
+        netlify
       >
         {/* Netlify requires this hidden form-name input */}
         <input type="hidden" name="form-name" value="contact" />
