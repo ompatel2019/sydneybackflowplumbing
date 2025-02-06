@@ -13,16 +13,16 @@ const WhyChooseUsPage = () => {
   const jsonLdWhyChooseUsPage = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Why Choose Us - Sydney Backflow & Plumbing",
-    "description": "Learn why Sydney Backflow & Plumbing is the best choice for your needs.",
+    "name": "Why Choose Sydney Backflow & Plumbing | Trusted Horsley Park Plumbers",
+    "description": "Learn why our guaranteed workmanship, 20+ years of experience, and 24/7 emergency service set us apart in Horsley Park and Greater Sydney.",
     "url": "https://example.com/whychooseus"
   };
 
   return (
     <>
       <SeoHelmet
-        title="Why Choose Us - Sydney Backflow & Plumbing"
-        description="Learn why Sydney Backflow & Plumbing is the best choice for your needs."
+        title="Why Choose Sydney Backflow & Plumbing | Trusted Horsley Park Plumbers"
+        description="Learn why our guaranteed workmanship, 20+ years of experience, and 24/7 emergency service set us apart in Horsley Park and Greater Sydney."
         jsonSchema={jsonLdWhyChooseUsPage}
       />
 

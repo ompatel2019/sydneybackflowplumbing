@@ -4,8 +4,8 @@ import { HashLink } from 'react-router-hash-link';
 import { FaStar } from "react-icons/fa";
 
 const Hero = () => {
-  const topText = 'Sydney Backflow and Plumbing';
-  const heroText = 'Plumbing Experts in Sydney';
+  const topText = "Lets get to work!";
+  const heroText = 'Sydney Backflow & Plumbing — Serving Horsley Park & Greater Sydney';
 
   const heroSubtext = 
     'We provide top-tier plumbing solutions for every property in the region, ensuring your water flows smoothly—from blocked drains to hot water systems. Our licensed team is dedicated to delivering reliable service around the clock, so you can rest easy knowing your plumbing is in expert hands.';

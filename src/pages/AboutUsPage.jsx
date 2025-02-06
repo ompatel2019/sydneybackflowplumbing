@@ -14,7 +14,7 @@ const AboutUsPage = () => {
   const jsonLdAboutUsPage = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "About Us - Sydney Backflow & Plumbing",
+    "name": "About Sydney Backflow & Plumbing | Serving Horsley Park & Greater Sydney",
     "description": "Learn more about Sydney Backflow & Plumbing, our values, and our team.",
     "url": "https://example.com/aboutus"
   };
@@ -22,8 +22,8 @@ const AboutUsPage = () => {
   return (
     <>
       <SeoHelmet
-        title="About Us - Sydney Backflow & Plumbing"
-        description="Learn more about Sydney Backflow & Plumbing, our values, and our team."
+        title="About Sydney Backflow & Plumbing | Serving Horsley Park & Greater Sydney"
+        description="Learn about our 30+ years of experience, commitment to guaranteed workmanship, and why we're the trusted plumbers for Horsley Park and Greater Sydney."
         jsonSchema={jsonLdAboutUsPage}
       />
 

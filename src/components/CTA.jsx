@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 const CTA = ({ backgroundColour, textColour }) => {
   const perks = [
     'Fast Response To Inquiry', 
-    '20+ Years of Proven Expertise', 
+    '30+ Years of Proven Expertise', 
     'Master-level Professionals', 
     'Craftsmanship You Can Count On'
   ];

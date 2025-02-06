@@ -1,14 +1,13 @@
 import React from 'react';
-import divider from '../images/curve.svg';
 
 const PageTitle = ({ pageTitle, pageRoute, dividerBackground, dividerFill, backgroundColour, textColour }) => {
   return (
     <>
       <section className={`${backgroundColour} ${textColour} space-y-12 max-md:space-y-4`}>
         <div className='space-y-4 responsivePad 2xl:pt-32 lg:pt-24 md:pt-20 pt-12 text-center'>
-          <h2 className='h1 font-satoshi-black'>
+          <h1 className='h1 font-satoshi-black'>
             {pageTitle}
-          </h2>
+          </h1>
           <p className='h7 font-satoshi-medium'>
             {pageRoute}
           </p>

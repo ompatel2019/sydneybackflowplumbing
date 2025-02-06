@@ -13,15 +13,15 @@ const BlogsPage = () => {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Blogs - Sydney Backflow & Plumbing",
-    "description": "Collection of our latest insights and trends in digital services.",
+    "description": "Explore our latest posts on plumbing tips, industry insights, and expert advice. Proudly serving Horsley Park and Greater Sydney.",
     "url": "https://example.com/blogs"
   };
 
   return (
     <>
       <SeoHelmet
-        title="All Blogs - Sydney Backflow & Plumbing"
-        description="Explore our latest blog posts on SEO, web design, and digital marketing insights."
+        title="Plumbing Tips & News | Sydney Backflow & Plumbing Blog"
+        description="Explore our latest posts on plumbing tips, industry insights, and expert advice. Proudly serving Horsley Park and Greater Sydney."
         jsonSchema={jsonLdBlogsPage}
       />
 

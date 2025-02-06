@@ -12,16 +12,16 @@ const ServicesPage = () => {
   const jsonLdServicesPage = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Services - Sydney Backflow & Plumbing",
-    "description": "Discover our range of professional services at Sydney Backflow & Plumbing.",
+    "name": "Plumbing Services in Sydney | Sydney Backflow & Plumbing",
+    "description": "Learn why our guaranteed workmanship, 20+ years of experience, and 24/7 emergency service set us apart in Horsley Park and Greater Sydney.",
     "url": "https://example.com/services"
   };
 
   return (
     <>
       <SeoHelmet
-        title="Services - Sydney Backflow & Plumbing"
-        description="Discover our range of professional services at Sydney Backflow & Plumbing."
+        title="Plumbing Services in Sydney | Sydney Backflow & Plumbing"
+        description="Learn why our guaranteed workmanship, 30+ years of experience, and 24/7 emergency service set us apart in Horsley Park and Greater Sydney."
         jsonSchema={jsonLdServicesPage}
       />
 

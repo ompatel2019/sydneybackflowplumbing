@@ -24,7 +24,7 @@ const Topbar = () => {
     },
     {
       linkIcon: IoLocationSharp,
-      linkDesc: 'Sydney, NSW',
+      linkDesc: 'Greater Sydney, NSW',
     },
   ];
 
