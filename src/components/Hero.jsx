@@ -8,7 +8,7 @@ const Hero = () => {
   const heroText = 'Sydney Backflow & Plumbing — Serving Horsley Park & Greater Sydney';
 
   const heroSubtext = 
-    'We provide top-tier plumbing solutions for every property in the region, ensuring your water flows smoothly—from blocked drains to hot water systems. Our licensed team is dedicated to delivering reliable service around the clock, so you can rest easy knowing your plumbing is in expert hands.';
+    'We offer premier plumbing solutions for all properties, from unblocking drains to fixing hot water systems. Our licensed team provides reliable, 24/7 service to ensure your plumbing needs are expertly handled.';
 
   const bottomText = 'Only 5-Star Reviews On Google';
 
