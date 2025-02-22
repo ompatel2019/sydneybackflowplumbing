@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { FiMenu } from 'react-icons/fi';
 import { RxCross2 } from 'react-icons/rx';
+import logo from '../images/logoDark.svg'
 
 const Navbar = () => {
   const navbarLinks = [
@@ -24,7 +25,7 @@ const Navbar = () => {
       <header
         className={`responsivePad py-4 flex justify-between font-satoshi-medium items-center sticky top-0 z-50 ${showMenu ? 'bg-black-0' : 'bg-white-0'}`}
       >
-        <p>Insert logo here...</p>
+        <img src={logo} alt="Sydney Backflow Plumbing Logo" className='2xl:w-24 lg:w-20 w-16 h-auto' />
 
         {/* Desktop Navigation */}
         <nav 

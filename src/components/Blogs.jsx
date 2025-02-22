@@ -1,14 +1,13 @@
 import React from 'react';
-import blogImageSample from '../images/blogImageSample.jpg';
 import { HashLink } from 'react-router-hash-link';
 
-const Blogs = () => {
+const Blogs = ({blog1, blog2, blog3}) => {
   const sectionHeading = 'Blogs & Articles';
   const sectionDescription = "Read Our Latest Blogs";
 
   const blogs = [
     {
-      blogImage: blogImageSample,
+      blogImage: blog1,
       blogType: 'Tutorial', 
       blogTitle: 'Prevent Common Plumbing Issues with These Simple Tips', 
       blogDescription: 'Learn how to prevent common plumbing problems with easy maintenance tips that save you money and headaches.',
@@ -16,7 +15,7 @@ const Blogs = () => {
       blogTo: '/blogs/1'
     },
     {
-      blogImage: blogImageSample,
+      blogImage: blog2,
       blogType: 'Informative', 
       blogTitle: 'The Importance of Regular Drain Cleaning', 
       blogDescription: 'Understand why regular drain cleaning is crucial for maintaining your plumbing system’s health and avoiding costly repairs.',
@@ -24,7 +23,7 @@ const Blogs = () => {
       blogTo: '/blogs/2'
     },
     {
-      blogImage: blogImageSample,
+      blogImage: blog3,
       blogType: 'Tutorial', 
       blogTitle: 'How to Choose the Right Hot Water System for Your Home', 
       blogDescription: 'Explore the different types of hot water systems and find out which one best suits your needs and budget.',
@@ -58,7 +57,7 @@ const Blogs = () => {
               width={400} 
               height={400} 
               loading='lazy' 
-              className='rounded-md w-full md:max-h-[480px]' 
+              className='rounded-md w-full md:h-[320px]' 
             />
             <p className='italic text-base'>{blog.blogType}</p>
             <HashLink smooth to={blog.blogTo}>

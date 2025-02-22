@@ -6,9 +6,11 @@
 @tailwind utilities;
 
 /* Additional custom classes */
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: #f8fafc;
 }
 
 /* Example .responsivePad class from your code */

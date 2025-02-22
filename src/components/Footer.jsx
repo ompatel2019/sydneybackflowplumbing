@@ -2,6 +2,7 @@ import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { BsFacebook } from "react-icons/bs";
 import { IoLogoGoogle } from "react-icons/io5";
+import logo from '../images/logoDark.svg'
 
 const Footer = () => {
   const linkClass = 'hover:underline transition-all p';
@@ -22,13 +23,13 @@ const Footer = () => {
       <div className='responsivePad pt-10 bg-white-0 p font-satoshi-medium'>
 
         <div className='flex justify-between py-4'>
-          <p>
-            {/* Intentionally left blank or can place text/logo if needed */}
-          </p>
+          <img src={logo} alt="Sydney Backflow Plumbing Logo" className='2xl:w-24 lg:w-20 w-16 h-auto' />
 
           <ul className='flex space-x-4 max-sm:space-x-2'>
-            <li className={linkClass}><HashLink smooth to="/aboutus">About Us</HashLink></li>
+            <li className={linkClass}><HashLink smooth to="/">Home</HashLink></li>
+            <li className={linkClass}><HashLink smooth to="/services">Services</HashLink></li>
             <li className={linkClass}><HashLink smooth to="/whychooseus">Why Choose Us</HashLink></li>
+            <li className={linkClass}><HashLink smooth to="/aboutus">About Us</HashLink></li>
             <li className={linkClass}><HashLink smooth to="/contact">Contact</HashLink></li>
           </ul>
 

@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 
 const Hero = () => {
   const topText = "Lets get to work!";
-  const heroText = 'Sydney Backflow & Plumbing — Serving Horsley Park & Greater Sydney';
+  const heroText = 'Sydney Backflow & Plumbing — Serving Wetherill Park & Greater Sydney';
 
   const heroSubtext = 
     'We offer premier plumbing solutions for all properties, from unblocking drains to fixing hot water systems. Our licensed team provides reliable, 24/7 service to ensure your plumbing needs are expertly handled.';

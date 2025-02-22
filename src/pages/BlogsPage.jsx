@@ -1,6 +1,9 @@
 // pages/BlogsPage.jsx
 import React from 'react';
 import SeoHelmet from '../components/SeoHelmet';
+import blog1 from '../images/blog1.jpg'
+import blog2 from '../images/blog2.jpg'
+import blog3 from '../images/blog3.jpg'
 
 // ─── Components for Blogs Page ───────────────────────────────
 import Blogs from '../components/Blogs';
@@ -34,7 +37,7 @@ const BlogsPage = () => {
         backgroundColour='bg-black-0' 
         textColour='text-white-0'
       />
-      <Blogs />
+      <Blogs blog1={blog1} blog2={blog2} blog3={blog3}/>
       <CTA backgroundColour='bg-primary-0' textColour='text-white-0'/>
     </>
   );
