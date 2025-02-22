@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import blogImage from '../../images/blog1.jpg';
+import blogImage from '../../images/blog1.webp';
 
 // Subcomponents
 import BlogHeader from './blogComponents/BlogHeader';

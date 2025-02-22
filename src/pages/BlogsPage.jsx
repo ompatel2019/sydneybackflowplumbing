@@ -1,9 +1,9 @@
 // pages/BlogsPage.jsx
 import React from 'react';
 import SeoHelmet from '../components/SeoHelmet';
-import blog1 from '../images/blog1.jpg'
-import blog2 from '../images/blog2.jpg'
-import blog3 from '../images/blog3.jpg'
+import blog1 from '../images/blog1.webp'
+import blog2 from '../images/blog2.webp'
+import blog3 from '../images/blog3.webp'
 
 // ─── Components for Blogs Page ───────────────────────────────
 import Blogs from '../components/Blogs';

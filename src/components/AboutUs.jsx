@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImg from '../images/aboutUs.jpg';
+import aboutImg from '../images/aboutUs.webp';
 
 const AboutUs = () => {
   const sectionHeading = 'About Us'; 

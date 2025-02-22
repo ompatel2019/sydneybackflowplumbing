@@ -3,7 +3,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 // If you have a dedicated image for Blog3, import it here:
-import blogImage from '../../images/blog3.jpg';
+import blogImage from '../../images/blog3.webp';
 
 // Subcomponents
 import BlogHeader from './blogComponents/BlogHeader';
@@ -46,7 +46,7 @@ const Blog3 = () => {
       }
     },
     // If you'd like, you can include the image:
-    "image": "https://example.com/images/blog3.jpg"
+    "image": "https://example.com/images/blog3.webp"
   };
 
   // ──────────────────────────────────────
