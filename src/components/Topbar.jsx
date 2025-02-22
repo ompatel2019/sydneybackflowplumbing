@@ -24,7 +24,8 @@ const Topbar = () => {
     },
     {
       linkIcon: IoLocationSharp,
-      linkDesc: 'Wetherill Park, NSW'
+      linkDesc: 'Wetherill Park, NSW',
+      linkTo: 'https://www.google.com/maps?sca_esv=9a8b494ebc885c97&rlz=1C5CHFA_enAU1102AU1102&output=search&q=wetherill+park&source=lnms&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpIgVFCTcbZI9VMGzNoV0iOZkckJJygdiLH6_g992ly-N56ueDsJ8PHmDNZqG8FmCe3GaMsJKZsLO8dQHXAa6ktp1Q-Ppm9Ty0oP3Vd8j148johs55TxuqqFtA_OuhVduB_ZaOlhwqZcpgdCmdxVKDjWMZtnYxAD8fUZ4o0y0NeFMuyYJZKylpMlFR_x_1-ojk1sLn1A&entry=mc&ved=1t:200715&ictx=111'
     },
   ];
 
