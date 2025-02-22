@@ -12,13 +12,13 @@ const ServicesLine = () => {
   ];
 
   return (
-    <div className='bg-primary-0 font-satoshi-semibold h7'>
+    <div className="bg-primary-0 font-satoshi-semibold h7">
       <div className="services-scroll">
         <div className="scrolling-content py-2 max-md:py-2">
           {servicesArray.map((service, index) => (
             <HashLink
               key={`service-${index}`}
-              className='service-item'
+              className="service-item"
               smooth to="/services"
             >
               <div className="mr-[1rem]">{service.toUpperCase()}</div>
@@ -27,7 +27,7 @@ const ServicesLine = () => {
           {servicesArray.map((service, index) => (
             <HashLink
               key={`service-duplicate-${index}`}
-              className='service-item'
+              className="service-item"
               smooth to="/services"
             >
               <div>{service}</div>

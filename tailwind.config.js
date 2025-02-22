@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {
@@ -18,16 +18,16 @@ export default {
         'satoshi-black': ['Satoshi-Black', 'sans-serif'],
         'satoshi-black-italic': ['Satoshi-BlackItalic', 'sans-serif'],
         'satoshi-variable': ['Satoshi-Variable', 'sans-serif'],
-        'satoshi-variable-italic': ['Satoshi-VariableItalic', 'sans-serif'],
+        'satoshi-variable-italic': ['Satoshi-VariableItalic', 'sans-serif']
       },
       colors: {
         'primary': ['#2459b7'],
         'secondary': ['#142855'],
         'white': ['#f8fafc'],
         'black': ['#2A2A2A'],
-        'grey': ['#D3D3D3'],
+        'grey': ['#D3D3D3']
       }
-    },
+    }
   },
-  plugins: [],
-}
+  plugins: []
+};

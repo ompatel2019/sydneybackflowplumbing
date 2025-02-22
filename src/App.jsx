@@ -1,4 +1,3 @@
-// App.jsx
 import React, { Suspense, lazy } from 'react';
 import {
   Route,
@@ -20,14 +19,14 @@ const Blog1 = lazy(() => import('./pages/blogs/Blog1'));
 const Blog2 = lazy(() => import('./pages/blogs/Blog2'));
 const Blog3 = lazy(() => import('./pages/blogs/Blog3'));
 
-// ─── Router Configuration ───────────────────────────────────────────────
+// ─── Router Configuration ─────────────────────────────────────
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />}>
       <Route index element={<HomePage />} />
 
       <Route
-        path="services"
+        path="our-services"
         element={
           <Suspense fallback={<Fallback />}>
             <ServicesPage />
@@ -36,7 +35,7 @@ const router = createBrowserRouter(
       />
 
       <Route
-        path="whychooseus"
+        path="why-choose-us"
         element={
           <Suspense fallback={<Fallback />}>
             <WhyChooseUsPage />
@@ -45,7 +44,7 @@ const router = createBrowserRouter(
       />
 
       <Route
-        path="aboutus"
+        path="about-us"
         element={
           <Suspense fallback={<Fallback />}>
             <AboutUsPage />
@@ -54,7 +53,7 @@ const router = createBrowserRouter(
       />
 
       <Route
-        path="contact"
+        path="contact-us"
         element={
           <Suspense fallback={<Fallback />}>
             <ContactPage />

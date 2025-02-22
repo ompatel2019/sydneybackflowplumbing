@@ -1,4 +1,3 @@
-/* index.css or tailwind.css */
 @import url('fonts/satoshi.css');
 
 @tailwind base;
@@ -43,5 +42,3 @@ html {
 .p {
   @apply text-base xl:text-lg;
 }
-
-/* Other responsive text classes, etc. */

@@ -1,149 +1,138 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <!--
       Viewport Meta Tag:
       Ensures proper scaling and rendering on mobile devices.
     -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Page Title:
-         Appears in browser tabs and is used by search engines as the clickable headline.
+    <!-- Content Security Policy:
+         A basic example to reduce XSS and other vulnerabilities.
+         Adjust src directives to match your use of external sources.
     -->
-    <title>Sydney Backflow And Plumbing</title>
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' https://maps.googleapis.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com;
+      connect-src 'self';
+      font-src 'self' https://fonts.gstatic.com;
+    ">
+
+    <!-- Page Title -->
+    <title>Sydney Backflow and Plumbing</title>
 
     <!-- Meta Description:
-         Provides a summary of the page content for search engines and social previews.
+         Updated to emphasize Wetherill Park & Sydney.
     -->
     <meta
       name="description"
-      content="Sydney Backflow And Plumbing is a trusted local plumber servicing the Sydney to Wollongong region, offering 24/7 emergency plumbing solutions, guaranteed workmanship, and over two decades of expertise."
-    />
+      content="Sydney Backflow and Plumbing is your trusted local plumber servicing Wetherill Park & Sydney regions, offering 24/7 emergency solutions, guaranteed workmanship, and over two decades of expertise."
+    >
 
     <!-- Meta Keywords:
-         (Optional) Lists targeted keywords. Most modern search engines give little weight to this tag.
+         (Optional) Lists targeted keywords. Modern search engines often ignore this,
+         but included for completeness. Included 'Wetherill Park' & 'Sydney'.
     -->
     <meta
       name="keywords"
-      content="Plumbing, Sydney Plumber, Drain Cleaning, Hot Water Systems, Emergency Plumbing, Gas Plumbing, Blocked Drains, Wollongong Plumber"
-    />
+      content="Plumbing, Sydney Plumber, Drain Cleaning, Hot Water Systems, Emergency Plumbing, Gas Plumbing, Blocked Drains, Wollongong Plumber, Wetherill Park"
+    >
 
-    <!-- Canonical Tag:
-         Helps prevent duplicate content issues by specifying the preferred URL.
-    -->
-    <link rel="canonical" href="https://sydneybackflowplumbing.com.au" />
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://sydneybackflowplumbing.com.au">
 
-    <!-- Robots Meta Tag:
-         Instructs search engine crawlers to index the page and follow links.
-    -->
-    <meta name="robots" content="index, follow" />
+    <!-- Robots Meta Tag -->
+    <meta name="robots" content="index, follow">
 
-    <!-- X-Robots-Tag:
-         Additional crawler instructions (often set via HTTP headers, but can be included here).
-    -->
-    <meta name="x-robots-tag" content="index, follow" />
+    <!-- X-Robots-Tag -->
+    <meta name="x-robots-tag" content="index, follow">
 
-    <!-- Publisher Meta Tag:
-         Specifies the publisher or brand behind the content.
-    -->
-    <meta name="publisher" content="Sydney Backflow And Plumbing" />
+    <!-- Publisher Meta Tag -->
+    <meta name="publisher" content="Sydney Backflow and Plumbing">
 
-    <!-- Theme Color:
-         Sets the browser toolbar color on supported mobile devices.
-    -->
-    <meta name="theme-color" content="#FAFAFA" />
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#FAFAFA">
 
-    <!-- Open Graph Meta Tags:
-         Enhance link previews when your site is shared on social media platforms.
-    -->
-    <meta property="og:title" content="Sydney Backflow And Plumbing" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sydney Backflow and Plumbing">
     <meta
       property="og:description"
-      content="Your local plumbing experts serving Sydney to Wollongong. We specialize in blocked drains, gas plumbing, hot water systems, and emergency plumbing services."
-    />
-    <meta property="og:url" content="https://sydneybackflowplumbing.com.au" />
-    <!-- Update the image URL once you have a preferred social preview image -->
+      content="Your local plumbing experts serving Wetherill Park & Sydney. We specialize in blocked drains, gas plumbing, hot water systems, and emergency plumbing services."
+    >
+    <meta property="og:url" content="https://sydneybackflowplumbing.com.au">
     <meta
       property="og:image"
       content="https://sydneybackflowplumbing.com.au/favicon.svg"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_AU" />
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_AU">
 
-    <!-- Twitter Card Meta Tags:
-         Provide rich content previews for tweets sharing your page.
-    -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Sydney Backflow And Plumbing" />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sydney Backflow and Plumbing">
     <meta
       name="twitter:description"
-      content="Dependable, professional plumbing solutions in Sydney and Wollongong—on call 24/7."
-    />
-    <!-- Update the image URL once you have a preferred social preview image -->
+      content="Dependable, professional plumbing solutions in Wetherill Park & Sydney—on call 24/7."
+    >
     <meta
       name="twitter:image"
       content="https://sydneybackflowplumbing.com.au/favicon.svg"
-    />
+    >
 
-    <!-- Favicon & App Icons:
-         Uncomment and replace the hrefs with your actual favicon paths once available.
-         They specify icons used in browser tabs, bookmarks, and on mobile devices.
-    -->
-     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-     <link rel="shortcut icon" href="/favicon.ico" />
-     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-     <link rel="manifest" href="/site.webmanifest" />
+    <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- Structured Data (JSON-LD):
-         Embeds Local Business Schema markup to help search engines understand your business details.
-         Customize the address, telephone, logo, etc., as needed.
+         LocalBusiness with updated references for Wetherill Park & Sydney.
+         Adjust @id or additional fields as needed.
     -->
     <script type="application/ld+json">
-     {
-       "@context": "https://schema.org",
-       "@type": "LocalBusiness",
-       "name": "Sydney Backflow and Plumbing",
-       "image": "https://sydneybackflowplumbing.com.au/favicon.svg",
-       "@id": "",
-       "url": "https://sydneybackflowplumbing.com.au/",
-       "telephone": "0413536277",
-       "address": {
-         "@type": "PostalAddress",
-         "streetAddress": "",
-         "addressLocality": "Sydney",
-         "addressRegion": "NSW",
-         "postalCode": "2164",
-         "addressCountry": "AU"
-       },
-       "description": "Sydney Backflow and Plumbing, operating since 2001 in Sydney to Wollongong regions, we specialize in plumbing, gasfitting, and drainage service for domestic, industrial, and commercial clients. We are known for prompt response times and affordable upfront costs, our services range from sewer line unblocking and repairs to hot water system maintenance and replacement, including commercial Raypak boilers. We handle busted hot and cold water lines, header tank service, shopping center, and service station maintenance, all executed with exceptional customer service.",
-       "openingHoursSpecification": {
-         "@type": "OpeningHoursSpecification",
-         "dayOfWeek": [
-           "Monday",
-           "Tuesday",
-           "Wednesday",
-           "Thursday",
-           "Friday",
-           "Saturday",
-         ],
-         "opens": "00:00",
-         "closes": "23:59"
-       } 
-     }
-     </script>
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Sydney Backflow and Plumbing",
+      "image": "https://sydneybackflowplumbing.com.au/favicon.svg",
+      "@id": "",
+      "url": "https://sydneybackflowplumbing.com.au/",
+      "telephone": "0413 536 277",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Wetherill Park",
+        "addressLocality": "Sydney",
+        "addressRegion": "NSW",
+        "postalCode": "2164",
+        "addressCountry": "AU"
+      },
+      "description": "Sydney Backflow and Plumbing, operating since 2001 in Wetherill Park & Sydney regions, specializing in plumbing, gasfitting, and drainage service for domestic, industrial, and commercial clients.",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+    </script>
   </head>
   <body>
-    <!-- React Root Element:
-         This is where your React application will be mounted.
-    -->
+    <!-- React Root Element -->
     <div id="root"></div>
 
-    <!-- Main Entry Script:
-         Loads your React application bundle.
-         Make sure the path is correct for your Vite build setup.
-    -->
+    <!-- Main Entry Script (Vite build output).
+         Adjust to your production build path if needed. -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

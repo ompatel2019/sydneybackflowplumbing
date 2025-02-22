@@ -1,8 +1,7 @@
-// pages/HomePage.jsx
 import React from 'react';
 import SeoHelmet from '../components/SeoHelmet';
 
-// ─── Sections ─────────────────────────────────────────────────────
+// Sections
 import ServicesLine from '../components/ServicesLine';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
@@ -15,24 +14,22 @@ import Faqs from '../components/Faqs';
 import ContactDetails from '../components/ContactDetails';
 
 const HomePage = () => {
-  // ─── Schema for Home Page ─────────────────────────────────
   const jsonLdHomePage = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Sydney Backflow & Plumbing | 24/7 Plumber for Wetherill Park & Sydney",
-    "description": "Sydney Backflow & Plumbing offers expert, around-the-clock service. Specializing in drain cleaning, hot water systems, gas plumbing, and more.",
-    "url": "https://example.com/"
+    "name": "Sydney Backflow and Plumbing | 24/7 Plumber for Wetherill Park & Sydney",
+    "description": "Sydney Backflow and Plumbing offers expert, around-the-clock service. Specializing in drain cleaning, hot water systems, gas plumbing, and more.",
+    "url": "https://sydneybackflowplumbing.com.au/"
   };
 
   return (
     <>
       <SeoHelmet
-        title="Sydney Backflow & Plumbing | 24/7 Plumber for Wetherill Park & Sydney"
-        description="Sydney Backflow & Plumbing offers expert, around-the-clock service. Specializing in drain cleaning, hot water systems, gas plumbing, and more."
+        title="Sydney Backflow and Plumbing | 24/7 Plumber for Wetherill Park & Sydney"
+        description="Sydney Backflow and Plumbing offers expert, around-the-clock service for Wetherill Park & Sydney. Specializing in drains, hot water, and more."
         jsonSchema={jsonLdHomePage}
       />
 
-      {/* ─── Sections ─────────────────────────────────────────── */}
       <ServicesLine />
       <Hero />
       <Services />

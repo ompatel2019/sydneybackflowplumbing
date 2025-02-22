@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <!-- Home page -->
   <url>
@@ -13,7 +14,7 @@
 
   <!-- Services page -->
   <url>
-    <loc>https://sydneybackflowplumbing.com.au/services</loc>
+    <loc>https://sydneybackflowplumbing.com.au/our-services</loc>
     <lastmod>2025-02-22T05:25:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -21,7 +22,7 @@
 
   <!-- Whychooseus page -->
   <url>
-    <loc>https://sydneybackflowplumbing.com.au/whychooseus</loc>
+    <loc>https://sydneybackflowplumbing.com.au/why-choose-us</loc>
     <lastmod>2025-02-22T05:25:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -29,7 +30,7 @@
 
   <!-- Aboutus page -->
   <url>
-    <loc>https://sydneybackflowplumbing.com.au/aboutus</loc>
+    <loc>https://sydneybackflowplumbing.com.au/about-us</loc>
     <lastmod>2025-02-22T05:25:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -37,7 +38,7 @@
 
   <!-- Contact page -->
   <url>
-    <loc>https://sydneybackflowplumbing.com.au/contact</loc>
+    <loc>https://sydneybackflowplumbing.com.au/contact-us</loc>
     <lastmod>2025-02-22T05:25:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

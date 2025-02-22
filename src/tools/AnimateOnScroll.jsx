@@ -1,4 +1,3 @@
-// AnimateOnScroll.jsx
 import React, { useRef, useEffect, useState } from 'react';
 
 /**
@@ -6,7 +5,7 @@ import React, { useRef, useEffect, useState } from 'react';
  * Wraps children and adds an "in-view" class once the element enters the viewport.
  *
  * @param {object} props
- * @param {string} props.className - Additional CSS classes (e.g., "fade-up fade-in").
+ * @param {string} props.className - Additional CSS classes (e.g. "fade-up fade-in").
  * @param {React.ReactNode} props.children - The content to animate.
  * @returns {JSX.Element}
  */
@@ -20,7 +19,6 @@ const AnimateOnScroll = ({ children, className = '', ...props }) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             setInView(true);
-            // Optionally unobserve after the first trigger
             obs.unobserve(entry.target);
           }
         });
@@ -32,7 +30,6 @@ const AnimateOnScroll = ({ children, className = '', ...props }) => {
       observer.observe(ref.current);
     }
 
-    // Clean up on unmount
     return () => {
       if (ref.current) {
         observer.unobserve(ref.current);
@@ -40,7 +37,6 @@ const AnimateOnScroll = ({ children, className = '', ...props }) => {
     };
   }, []);
 
-  // Combine provided className with "in-view" if the element is visible
   const combinedClassName = `${className} ${inView ? 'in-view' : ''}`.trim();
 
   return (
