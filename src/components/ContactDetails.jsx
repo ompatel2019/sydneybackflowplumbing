@@ -34,8 +34,8 @@ const ContactDetails = () => {
   const sectionDescription = "We're closer than you think!";
 
   return (
-    <section className="responsivePad 2xl:py-32 lg:py-24 md:py-20 py-12 font-satoshi space-y-8 bg-white-0">
-      <div className="space-y-4">
+    <section className="responsivePad 2xl:py-32 lg:py-24 md:py-20 py-12 font-satoshi space-y-8 bg-primary-0 text-white-0">
+      <div className="space-y-4 text-center">
         <h2 className="h2 font-satoshi-black">
           {sectionHeading}
         </h2>
@@ -48,7 +48,7 @@ const ContactDetails = () => {
         {contactDetails.map((contactDetail, index) => (
           <div
             key={index}
-            className="border-l-[3px] max-md:border-l-2 border-black-0 p-4 space-y-2 flex flex-col justify-between"
+            className="border-l-[3px] max-md:border-l-2 border-white-0 p-4 space-y-2 flex flex-col justify-between"
           >
             <div className="flex space-x-2 items-center">
               <contactDetail.contactIcon className="w-8 h-8" aria-hidden="true" />
@@ -68,16 +68,6 @@ const ContactDetails = () => {
           </div>
         ))}
       </div>
-
-      {/* Lazy loading the map with "loading='lazy'" to improve performance. */}
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424143.8758662685!2d150.60232131820038!3d-33.847805254804975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20NSW!5e0!3m2!1sen!2sau!4v1738642735937!5m2!1sen!2sau"
-        className="w-full h-[480px]"
-        style={{ border: '0' }}
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        title="Wetherill Park & Sydney Region Map"
-      />
     </section>
   );
 };

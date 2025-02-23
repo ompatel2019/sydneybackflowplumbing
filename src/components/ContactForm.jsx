@@ -25,34 +25,33 @@ const ContactForm = () => {
     },
   ];
 
-  const handleSubmit = async (event) => {
+  const [result, setResult] = useState('');
+
+  const onSubmit = async (event) => {
     event.preventDefault();
-    const form = event.target;
-    const formData = new FormData(form);
+    setResult('Sending...');
+    const formData = new FormData(event.target);
+    formData.append('access_key', '');
 
     try {
-      await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString()
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
       });
 
-      setIsSubmitted(true);
-      form.reset();
-
-      setTimeout(() => {
-        setFadeOut(true);
-        setTimeout(() => {
-          setIsSubmitted(false);
-          setFadeOut(false);
-        }, 1000);
-      }, 2000);
-
+      const data = await response.json();
+      if (data.success) {
+        setResult('Form Submitted Successfully');
+        event.target.reset();
+      } else {
+        console.error('Error submitting form:', data);
+        setResult(data.message);
+      }
     } catch (error) {
-      console.error("Form submission error:", error);
+      console.error('Network Error:', error);
+      setResult('Error submitting form. Please try again later.');
     }
   };
-
   const inputFieldClass =
     "p-2 px-4 rounded-sm focus:border-c-1 focus:outline-none text-c-5-0 w-full hover:px-6 transition-all bg-transparent border-b-2";
 
@@ -83,10 +82,8 @@ const ContactForm = () => {
       <form
         name="contact"
         method="POST"
-        data-netlify="true"
-        onSubmit={handleSubmit}
+        onSubmit={onSubmit}
         className="responsivePad"
-        netlify
       >
         <input type="hidden" name="form-name" value="contact" />
 

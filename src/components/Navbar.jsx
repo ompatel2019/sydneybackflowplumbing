@@ -7,11 +7,11 @@ import logo from '../images/logoDark.svg';
 const Navbar = () => {
   const navbarLinks = [
     { linkName: 'Home', to: '/' },
-    { linkName: 'Services', to: '/services' },
-    { linkName: 'Why Choose Us', to: '/whychooseus' },
-    { linkName: 'About Us', to: '/aboutus' },
+    { linkName: 'Services', to: '/our-services' },
+    { linkName: 'Why Choose Us', to: '/why-choose-us' },
+    { linkName: 'About Us', to: '/about-us' },
     { linkName: 'Blogs', to: '/blogs' },
-    { linkName: 'Get Started', to: '/contact' }
+    { linkName: 'Get Started', to: '/contact-us' }
   ];
 
   const [showMenu, setShowMenu] = useState(false);

@@ -1,7 +1,10 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
+import blog1 from '../images/blog1.webp';
+import blog2 from '../images/blog2.webp';
+import blog3 from '../images/blog3.webp';
 
-const Blogs = ({ blog1, blog2, blog3 }) => {
+const Blogs = () => {
   const sectionHeading = 'Blogs & Articles';
   const sectionDescription = 'Read Our Latest Blogs';
 

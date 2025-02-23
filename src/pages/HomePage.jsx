@@ -34,8 +34,8 @@ const HomePage = () => {
       <Hero />
       <Services />
       <WhyChooseUs />
-      <ContactDetails />
       <ContactForm />
+      <ContactDetails />
       <Testimonials />
       <AboutUs />
       <Blogs />
