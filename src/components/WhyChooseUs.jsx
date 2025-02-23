@@ -13,12 +13,12 @@ const WhyChooseUs = () => {
       <section className='responsivePad bg-white-0 2xl:py-32 lg:py-24 md:py-20 py-12 text-white-0 space-y-12 max-md:space-y-4'>
         <div className='grid grid-cols-2 max-lg:grid-cols-1 gap-8'>
           <div>
-            <img 
-              src={job} 
-              alt="Why Choose Us section image" 
-              className='w-full h-full rounded-[4px]' 
-              loading="lazy"
-            />
+          <img 
+            src={job} 
+            alt="Why Choose Us section image" 
+            className="w-full h-auto rounded-[4px]" 
+            loading="lazy"
+          />
           </div>
 
           <div className='text-black-0 space-y-8 max-md:space-y-6 flex flex-col justify-around'>
