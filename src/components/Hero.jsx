@@ -13,8 +13,8 @@ const Hero = () => {
   const bottomText = "Only 5-Star Reviews On Google";
 
   const buttons = [
-    { button: 'Get A Quote', buttonRed: '/contact' },
-    { button: 'Learn More', buttonRed: '/services' }
+    { button: 'Get A Quote', buttonRed: '/contact-us' },
+    { button: 'Learn More', buttonRed: '/our-services' }
   ];
 
   return (

@@ -15,13 +15,13 @@ const Navbar = () => {
   ];
 
   const [showMenu, setShowMenu] = useState(false);
-
   const toggleMenu = () => setShowMenu(prev => !prev);
 
   return (
     <>
       <header
-        className={`responsivePad py-4 flex justify-between font-satoshi-medium items-center sticky top-0 z-50 ${showMenu ? 'bg-black-0' : 'bg-white-0'}`}
+        className={`responsivePad py-4 flex justify-between font-satoshi-medium items-center sticky top-0 z-50 
+                    ${showMenu ? 'bg-black-0' : 'bg-white-0'}`}
       >
         <img
           src={logo}
@@ -29,11 +29,8 @@ const Navbar = () => {
           className="2xl:w-24 lg:w-20 w-16 h-auto"
         />
 
-        <nav
-          role="navigation"
-          aria-label="Primary"
-          className="hidden md:flex"
-        >
+        {/* Desktop Nav */}
+        <nav role="navigation" aria-label="Primary" className="hidden md:flex">
           <ul className="flex space-x-3 items-center">
             {navbarLinks.map((link, index) =>
               link.linkName !== 'Get Started' ? (
@@ -45,7 +42,9 @@ const Navbar = () => {
               ) : (
                 <li key={index}>
                   <HashLink smooth to={link.to}>
-                    <div className="px-4 py-2 bg-primary-0 hover:px-8 text-white-0 rounded-sm hover:bg-blue-500 transition-all duration-200">
+                    <div className="px-4 py-2 bg-primary-0 hover:px-8 text-white-0 rounded-sm hover:bg-blue-500 
+                                    transition-all duration-200"
+                    >
                       {link.linkName}
                     </div>
                   </HashLink>
@@ -55,6 +54,7 @@ const Navbar = () => {
           </ul>
         </nav>
 
+        {/* Mobile Menu Toggle Button */}
         <button
           onClick={toggleMenu}
           aria-label={showMenu ? 'Close menu' : 'Open menu'}
@@ -69,12 +69,12 @@ const Navbar = () => {
         </button>
       </header>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay (NO aria-hidden) */}
       <div
-        className={`fixed inset-0 bg-black-0 text-white-0 flex flex-col items-center justify-center transition-opacity duration-300 ${
-          showMenu ? 'opacity-95 pointer-events-auto z-40' : 'opacity-0 pointer-events-none z-[-1]'
-        }`}
-        aria-hidden={!showMenu}
+        className={`fixed inset-0 bg-black-0 text-white-0 flex flex-col items-center justify-center 
+                    transition-opacity duration-300
+                    ${showMenu ? 'opacity-95 pointer-events-auto z-40' : 'opacity-0 pointer-events-none z-[-1]'}
+                  `}
       >
         <nav role="navigation" aria-label="Mobile menu">
           <ul className="flex flex-col space-y-6">
@@ -83,7 +83,6 @@ const Navbar = () => {
                 key={index}
                 className="hover:text-grey-0 transition-all"
                 onClick={toggleMenu}
-                tabIndex={showMenu ? "0" : "-1"}  // This change ensures links are not focusable when hidden
               >
                 <HashLink smooth to={link.to}>
                   {link.linkName}

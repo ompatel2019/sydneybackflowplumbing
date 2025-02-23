@@ -59,7 +59,7 @@ const Blogs = () => {
             />
             <p className="italic text-base">{blog.blogType}</p>
             <HashLink smooth to={blog.blogTo}>
-              <h5 className="p font-bold">{blog.blogTitle}</h5>
+              <p className="p font-bold">{blog.blogTitle}</p>
             </HashLink>
             <p className="text-md">{blog.blogDescription}</p>
             <p className="text-xs">{blog.blogReleaseDuration}</p>

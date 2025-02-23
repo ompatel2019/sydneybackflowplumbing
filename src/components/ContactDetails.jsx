@@ -52,7 +52,7 @@ const ContactDetails = () => {
           >
             <div className="flex space-x-2 items-center">
               <contactDetail.contactIcon className="w-8 h-8" aria-hidden="true" />
-              <h4 className="h7 font-bold">{contactDetail.contactType}</h4>
+              <p className="h7 font-bold">{contactDetail.contactType}</p>
             </div>
             <p className="p font-satoshi-light">
               {contactDetail.contactDesc}
