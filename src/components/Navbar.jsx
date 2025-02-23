@@ -23,11 +23,8 @@ const Navbar = () => {
         className={`responsivePad py-4 flex justify-between font-satoshi-medium items-center sticky top-0 z-50 
                     ${showMenu ? 'bg-black-0' : 'bg-white-0'}`}
       >
-        <img
-          src={logo}
-          alt="Sydney Backflow and Plumbing Logo"
-          className="2xl:w-24 lg:w-20 w-16 h-auto"
-        />
+
+      <img src={logo} alt="Sydney Backflow and Plumbing Logo" class="2xl:w-24 lg:w-20 w-16 h-auto" width="384" height="auto"/>
 
         {/* Desktop Nav */}
         <nav role="navigation" aria-label="Primary" className="hidden md:flex">
