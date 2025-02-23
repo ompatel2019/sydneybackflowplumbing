@@ -5,16 +5,16 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 
 const Topbar = () => {
-  const topBarLinksLeft = [
-    {
-      linkIcon: BsFacebook,
-      linkTo: ''
-    },
-    {
-      linkIcon: IoLogoGoogle,
-      linkTo: 'https://www.google.com/localservices/prolist?...'
-    }
-  ];
+  // const topBarLinksLeft = [
+  //   {
+  //     linkIcon: BsFacebook,
+  //     linkTo: ''
+  //   },
+  //   {
+  //     linkIcon: IoLogoGoogle,
+  //     linkTo: 'https://www.google.com/localservices/prolist?...'
+  //   }
+  // ];
 
   const topBarLinksRight = [
     {
@@ -30,14 +30,14 @@ const Topbar = () => {
   ];
 
   return (
-    <div className="bg-primary-0 responsivePad py-4 flex justify-between font-satoshi-medium text-white-0">
-      <div className="flex space-x-2">
+    <div className="bg-primary-0 responsivePad py-4 flex justify-end font-satoshi-medium text-white-0">
+      {/* <div className="flex space-x-2">
         {topBarLinksLeft.map((link, linkIndex) => (
           <a target="_blank" href={link.linkTo} key={linkIndex} rel="noreferrer">
             <link.linkIcon className="w-5 h-5" />
           </a>
         ))}
-      </div>
+      </div> */}
 
       <div className="flex space-x-4 max-md:hidden">
         {topBarLinksRight.map((link, linkIndex) => (

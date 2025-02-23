@@ -55,7 +55,7 @@ const Services = () => {
         <h2 className="h2 font-satoshi-black">
           {sectionHeading}
         </h2>
-        <p className="h7 font-satoshi-medium text-grey-0">
+        <p className="h7 font-satoshi-medium text-white-0">
           {sectionDescription}
         </p>
       </div>

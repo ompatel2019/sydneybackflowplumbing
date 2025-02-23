@@ -2,16 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <!--
-      Viewport Meta Tag:
-      Ensures proper scaling and rendering on mobile devices.
-    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Content Security Policy:
-         A basic example to reduce XSS and other vulnerabilities.
-         Adjust src directives to match your use of external sources.
-    -->
+    <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
       script-src 'self' 'unsafe-inline' https://maps.googleapis.com;
@@ -21,39 +14,23 @@
       font-src 'self' https://fonts.gstatic.com;
     ">
 
-    <!-- Page Title -->
     <title>Sydney Backflow and Plumbing</title>
 
-    <!-- Meta Description:
-         Updated to emphasize Wetherill Park & Sydney.
-    -->
     <meta
       name="description"
       content="Sydney Backflow and Plumbing is your trusted local plumber servicing Wetherill Park & Sydney regions, offering 24/7 emergency solutions, guaranteed workmanship, and over two decades of expertise."
     >
 
-    <!-- Meta Keywords:
-         (Optional) Lists targeted keywords. Modern search engines often ignore this,
-         but included for completeness. Included 'Wetherill Park' & 'Sydney'.
-    -->
     <meta
       name="keywords"
       content="Plumbing, Sydney Plumber, Drain Cleaning, Hot Water Systems, Emergency Plumbing, Gas Plumbing, Blocked Drains, Wollongong Plumber, Wetherill Park"
     >
 
-    <!-- Canonical Tag -->
     <link rel="canonical" href="https://sydneybackflowplumbing.com.au">
 
-    <!-- Robots Meta Tag -->
     <meta name="robots" content="index, follow">
-
-    <!-- X-Robots-Tag -->
     <meta name="x-robots-tag" content="index, follow">
-
-    <!-- Publisher Meta Tag -->
     <meta name="publisher" content="Sydney Backflow and Plumbing">
-
-    <!-- Theme Color -->
     <meta name="theme-color" content="#FAFAFA">
 
     <!-- Open Graph Meta Tags -->
@@ -70,6 +47,10 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_AU">
 
+    <!-- Facebook App ID (Commented out for Facebook) -->
+    <!-- This meta tag is for Facebook integration and insights -->
+    <!-- <meta property="fb:app_id" content="YOUR_FACEBOOK_APP_ID_HERE" /> -->
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sydney Backflow and Plumbing">
@@ -82,17 +63,12 @@
       content="https://sydneybackflowplumbing.com.au/favicon.svg"
     >
 
-    <!-- Favicon & App Icons -->
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Structured Data (JSON-LD):
-         LocalBusiness with updated references for Wetherill Park & Sydney.
-         Adjust @id or additional fields as needed.
-    -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -128,11 +104,7 @@
     </script>
   </head>
   <body>
-    <!-- React Root Element -->
     <div id="root"></div>
-
-    <!-- Main Entry Script (Vite build output).
-         Adjust to your production build path if needed. -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

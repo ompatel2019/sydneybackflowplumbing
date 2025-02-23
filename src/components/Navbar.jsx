@@ -83,6 +83,7 @@ const Navbar = () => {
                 key={index}
                 className="hover:text-grey-0 transition-all"
                 onClick={toggleMenu}
+                tabIndex={showMenu ? "0" : "-1"}  // This change ensures links are not focusable when hidden
               >
                 <HashLink smooth to={link.to}>
                   {link.linkName}
