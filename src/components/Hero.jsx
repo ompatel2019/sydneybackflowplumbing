@@ -14,7 +14,7 @@ const Hero = () => {
 
   const buttons = [
     { button: 'Get A Quote', buttonRed: '/contact-us' },
-    { button: 'Learn More', buttonRed: '/our-services' }
+    { button: 'Explore Services', buttonRed: '/our-services' }
   ];
 
   return (
