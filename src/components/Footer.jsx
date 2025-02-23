@@ -21,9 +21,10 @@ const Footer = () => {
   return (
     <div className="responsivePad pt-10 bg-white-0 p font-satoshi-medium">
       <div className="flex justify-between py-4">
-      <img src={logo} alt="Sydney Backflow and Plumbing Logo" class="2xl:w-24 lg:w-20 w-16 h-auto" width="384" height="auto"/>
+      {/* <img src={logo} alt="Sydney Backflow and Plumbing Logo" class="2xl:w-24 lg:w-20 w-16 h-auto" width="384" height="auto"/> */}
+      <div>Logo goes here...</div>
 
-        <ul className="flex space-x-4 max-sm:space-x-2">
+        <ul className="flex space-x-4 max-sm:space-x-2 max-md:hidden">
           <li className={linkClass}><HashLink smooth to="/">Home</HashLink></li>
           <li className={linkClass}><HashLink smooth to="/our-services">Services</HashLink></li>
           <li className={linkClass}><HashLink smooth to="/why-choose-us">Why Choose Us</HashLink></li>

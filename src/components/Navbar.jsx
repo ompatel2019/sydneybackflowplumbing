@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { FiMenu } from 'react-icons/fi';
 import { RxCross2 } from 'react-icons/rx';
-import logo from '../images/logoDark.svg';
+// import logo from '../images/logoDark.svg';
 
 const Navbar = () => {
   const navbarLinks = [
@@ -24,7 +24,8 @@ const Navbar = () => {
                     ${showMenu ? 'bg-black-0' : 'bg-white-0'}`}
       >
 
-      <img src={logo} alt="Sydney Backflow and Plumbing Logo" class="2xl:w-24 lg:w-20 w-16 h-auto" width="384" height="auto"/>
+      {/* <img src={logo} alt="Sydney Backflow and Plumbing Logo" class="2xl:w-24 lg:w-20 w-16 h-auto" width="384" height="auto"/> */}
+      <div>Logo goes here...</div>
 
         {/* Desktop Nav */}
         <nav role="navigation" aria-label="Primary" className="hidden md:flex">
