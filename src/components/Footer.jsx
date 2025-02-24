@@ -24,14 +24,6 @@ const Footer = () => {
       {/* <img src={logo} alt="Sydney Backflow and Plumbing Logo" class="2xl:w-24 lg:w-20 w-16 h-auto" width="384" height="auto"/> */}
       <div>Logo goes here...</div>
 
-        <ul className="flex space-x-4 max-sm:space-x-2 max-md:hidden">
-          <li className={linkClass}><HashLink smooth to="/">Home</HashLink></li>
-          <li className={linkClass}><HashLink smooth to="/our-services">Services</HashLink></li>
-          <li className={linkClass}><HashLink smooth to="/why-choose-us">Why Choose Us</HashLink></li>
-          <li className={linkClass}><HashLink smooth to="/about-us">About Us</HashLink></li>
-          <li className={linkClass}><HashLink smooth to="/contact-us">Contact</HashLink></li>
-        </ul>
-
         {/* <div className="flex space-x-2">
           {topBarLinksLeft.map((link, linkIndex) => (
             <a target="_blank" href={link.linkTo} key={linkIndex} rel="noreferrer">
@@ -41,10 +33,14 @@ const Footer = () => {
         </div> */}
       </div>
 
-      <div className="border-t-2 border-c-2-0 py-4">
-        <p className="text-center p m3">
+      <div className="border-t-2 border-c-2-0 py-4 flex justify-between">
+        <p className="p">
           © {new Date().getFullYear()} Sydney Backflow and Plumbing. All rights reserved.
         </p>
+
+        <a target="_blank" rel="noreferrer" href="https://bytesitedigital.com.au/">
+          <p className="p">Powered by bytesitedigital.</p>
+        </a>
       </div>
     </div>
   );
