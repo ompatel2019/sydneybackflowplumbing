@@ -24,8 +24,8 @@ const Navbar = () => {
                     ${showMenu ? 'bg-black-0' : 'bg-white-0'}`}
       >
 
-      <img src={logo} alt="Sydney Backflow and Plumbing Logo" class="2xl:w-24 lg:w-20 w-16 h-auto" width="384" height="auto"/>
-      {/* <div>Logo goes here...</div> */}
+      {/* <img src={logo} alt="Sydney Backflow and Plumbing Logo" class="2xl:w-24 lg:w-20 w-16 h-auto" width="384" height="auto"/> */}
+      <div>Logo goes here...</div>
 
         {/* Desktop Nav */}
         <nav role="navigation" aria-label="Primary" className="hidden md:flex">
