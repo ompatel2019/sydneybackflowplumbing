@@ -27,6 +27,7 @@ const HomePage = () => {
       <SeoHelmet
         title="Sydney Backflow and Plumbing | 24/7 Plumber for Wetherill Park & Sydney"
         description="Sydney Backflow and Plumbing offers expert, around-the-clock service for Wetherill Park & Sydney. Specializing in drains, hot water, and more."
+        canonicalUrl="https://sydneybackflowplumbing.com.au/"
         jsonSchema={jsonLdHomePage}
       />
 

@@ -10,16 +10,17 @@ const ServicesPage = () => {
   const jsonLdServicesPage = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Plumbing Services in Wetherill Park & Sydney | Sydney Backflow and Plumbing",
-    "description": "Professional and comprehensive plumbing services for Wetherill Park & Sydney. 24/7 emergency response, guaranteed workmanship, and 20+ years of experience.",
-    "url": "https://sydneybackflowplumbing.com.au/services"
+    "name": "Services",
+    "description": "Professional plumbing services for Wetherill Park & Sydney. We offer 24/7 emergency support and 20+ years of experience.",
+    "url": "https://sydneybackflowplumbing.com.au/our-services"
   };
 
   return (
     <>
       <SeoHelmet
-        title="Plumbing Services in Wetherill Park & Sydney | Sydney Backflow and Plumbing"
-        description="Professional plumbing services for Wetherill Park & Sydney. We offer 24/7 emergency service and 20+ years of experience."
+        title="Services"
+        description="Professional plumbing services for Wetherill Park & Sydney. We offer 24/7 emergency support and 20+ years of experience."
+        canonicalUrl="https://sydneybackflowplumbing.com.au/our-services"
         jsonSchema={jsonLdServicesPage}
       />
 

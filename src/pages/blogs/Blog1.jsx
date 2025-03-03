@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SeoHelmet from '../../components/SeoHelmet';
 import blogImage from '../../images/blog1.webp';
 
 // Subcomponents
@@ -17,29 +17,25 @@ const Blog1 = () => {
     In this guide, we’ll show you how to spot warning signs early and 
     apply easy DIY fixes—helping you avoid expensive repairs, wasted water, 
     and unnecessary stress.
-  `;
-  const blogUrl = 'https://yourwebsite.com/blogs/1'; // Update to your actual URL
+  `.trim();
+  const blogUrl = 'https://sydneybackflowplumbing.com.au/blogs/1'; // Update if needed
   const blogPublishDate = '2025-01-01';
 
-  // JSON-LD for schema.org
+  // JSON-LD schema
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": blogTitle,
     "image": blogImage,
-    "description": blogDescription.trim(),
-    "author": {
-      "@type": "Person",
-      "name": "John Plumber" // Update to actual author or organization name
-    },
+    "description": blogDescription,
     "url": blogUrl,
     "datePublished": blogPublishDate,
     "publisher": {
       "@type": "Organization",
-      "name": "Sydney Backflow & Plumbing", // Or replace with your actual company name
+      "name": "Sydney Backflow & Plumbing", // Replace if desired
       "logo": {
         "@type": "ImageObject",
-        "url": "https://sydneybackflowplumbing.com.au/favicon.svg" // Replace if needed
+        "url": "https://sydneybackflowplumbing.com.au/favicon.svg"
       }
     }
   };
@@ -315,14 +311,12 @@ const Blog1 = () => {
       className="bg-white-0 responsivePad font-satoshi lg:py-16 md:py-12 py-10"
       aria-label={blogTitle}
     >
-      {/* Helmet for meta tags & JSON-LD */}
-      <Helmet>
-        <title>{blogTitle} | Sydney Backflow & Plumbing</title>
-        <meta name="description" content={blogDescription} />
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLd)}
-        </script>
-      </Helmet>
+      <SeoHelmet
+        title={`${blogTitle} | Sydney Backflow & Plumbing`}
+        description={blogDescription}
+        canonicalUrl={blogUrl}
+        jsonSchema={jsonLd}
+      />
 
       {/* Blog Title */}
       <h1 className="h1 text-center font-satoshi-black">{blogTitle}</h1>

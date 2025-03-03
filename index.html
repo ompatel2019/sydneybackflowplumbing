@@ -1,82 +1,136 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
     <!-- Content Security Policy -->
-    <meta http-equiv="Content-Security-Policy" content="
-      default-src 'self';
-      script-src 'self' 'unsafe-inline' https://maps.googleapis.com;
-      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-      img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com;
-      connect-src 'self';
-      font-src 'self' https://fonts.gstatic.com;
-    ">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://maps.googleapis.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com;
+        connect-src 'self';
+        font-src 'self' https://fonts.gstatic.com;
+      "
+    />
 
+    <!-- Minimal fallback title/description for homepage -->
     <title>Sydney Backflow and Plumbing</title>
-
     <meta
       name="description"
-      content="Sydney Backflow and Plumbing is your trusted local plumber servicing Wetherill Park & Sydney regions, offering 24/7 emergency solutions, guaranteed workmanship, and over two decades of expertise."
-    >
+      content="Your trusted local plumber in Wetherill Park & Sydney, offering 24/7 emergency solutions, guaranteed workmanship, and decades of expertise."
+    />
+
+    <!-- Fallback canonical for the homepage -->
+    <link
+      rel="canonical"
+      href="https://sydneybackflowplumbing.com.au/"
+    />
 
     <meta
       name="keywords"
       content="Plumbing, Sydney Plumber, Drain Cleaning, Hot Water Systems, Emergency Plumbing, Gas Plumbing, Blocked Drains, Wollongong Plumber, Wetherill Park"
-    >
+    />
+    <meta
+      name="robots"
+      content="index, follow"
+    />
+    <meta
+      name="x-robots-tag"
+      content="index, follow"
+    />
+    <meta
+      name="publisher"
+      content="Sydney Backflow and Plumbing"
+    />
+    <meta
+      name="theme-color"
+      content="#FAFAFA"
+    />
 
-    <link rel="canonical" href="https://sydneybackflowplumbing.com.au">
-
-    <meta name="robots" content="index, follow">
-    <meta name="x-robots-tag" content="index, follow">
-    <meta name="publisher" content="Sydney Backflow and Plumbing">
-    <meta name="theme-color" content="#FAFAFA">
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Sydney Backflow and Plumbing">
+    <!-- Open Graph Meta Tags (Fallback for Home) -->
+    <meta
+      property="og:title"
+      content="Sydney Backflow and Plumbing"
+    />
     <meta
       property="og:description"
-      content="Your local plumbing experts serving Wetherill Park & Sydney. We specialize in blocked drains, gas plumbing, hot water systems, and emergency plumbing services."
-    >
-    <meta property="og:url" content="https://sydneybackflowplumbing.com.au">
+      content="Your local plumbing experts for Wetherill Park & Sydney, specializing in blocked drains, gas plumbing, hot water systems, and emergency plumbing."
+    />
+    <meta
+      property="og:url"
+      content="https://sydneybackflowplumbing.com.au/"
+    />
     <meta
       property="og:image"
       content="https://sydneybackflowplumbing.com.au/favicon.svg"
-    >
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_AU">
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:locale"
+      content="en_AU"
+    />
 
-    <!-- Facebook App ID (Commented out for Facebook) -->
-    <!-- This meta tag is for Facebook integration and insights -->
-    <!-- <meta property="fb:app_id" content="YOUR_FACEBOOK_APP_ID_HERE" /> -->
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sydney Backflow and Plumbing">
+    <!-- Twitter Card Meta Tags (Fallback for Home) -->
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="twitter:title"
+      content="Sydney Backflow and Plumbing"
+    />
     <meta
       name="twitter:description"
-      content="Dependable, professional plumbing solutions in Wetherill Park & Sydney—on call 24/7."
-    >
+      content="Dependable plumbing solutions in Wetherill Park & Sydney—on call 24/7."
+    />
     <meta
       name="twitter:image"
       content="https://sydneybackflowplumbing.com.au/favicon.svg"
-    >
+    />
 
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <!-- Favicon & App Icons -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <link
+      rel="shortcut icon"
+      href="/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png"
+    />
+    <link
+      rel="manifest"
+      href="/site.webmanifest"
+    />
 
-    <!-- JSON-LD: LocalBusiness -->
+    <!-- JSON-LD: LocalBusiness (fallback for homepage) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Sydney Backflow and Plumbing",
       "image": "https://sydneybackflowplumbing.com.au/favicon.svg",
-      "@id": "",
       "url": "https://sydneybackflowplumbing.com.au/",
       "telephone": "0413 536 277",
       "address": {
@@ -87,16 +141,11 @@
         "postalCode": "2164",
         "addressCountry": "AU"
       },
-      "description": "Sydney Backflow and Plumbing, operating since 2001 in Wetherill Park & Sydney regions, specializing in plumbing, gasfitting, and drainage service for domestic, industrial, and commercial clients.",
+      "description": "Sydney Backflow and Plumbing, operating since 2001 in Wetherill Park & Sydney, specializing in plumbing, gasfitting, and drainage service for domestic, industrial, and commercial clients.",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
+          "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
         ],
         "opens": "00:00",
         "closes": "23:59"
@@ -104,23 +153,27 @@
     }
     </script>
   </head>
+
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7KNFMGW7LS"></script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-7KNFMGW7LS"
+  ></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-7KNFMGW7LS');
+    gtag("js", new Date());
+    gtag("config", "G-7KNFMGW7LS");
   </script>
-  
+
   <body>
-    <!--
-      Netlify form fallback:
-      This hidden form ensures Netlify knows we have a form named "contact".
-      The fields match your React form so Netlify recognizes them.
-    -->
-    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <!-- Netlify form fallback (hidden) -->
+    <form
+      name="contact"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="text" name="number" />
@@ -128,6 +181,9 @@
     </form>
 
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script
+      type="module"
+      src="/src/main.jsx"
+    ></script>
   </body>
 </html>

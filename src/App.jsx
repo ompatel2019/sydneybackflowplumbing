@@ -19,11 +19,18 @@ const Blog1 = lazy(() => import('./pages/blogs/Blog1'));
 const Blog2 = lazy(() => import('./pages/blogs/Blog2'));
 const Blog3 = lazy(() => import('./pages/blogs/Blog3'));
 
-// ─── Router Configuration ─────────────────────────────────────
+// Router Configuration
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />}>
-      <Route index element={<HomePage />} />
+      <Route
+        index
+        element={
+          <Suspense fallback={<Fallback />}>
+            <HomePage />
+          </Suspense>
+        }
+      />
 
       <Route
         path="our-services"
@@ -78,7 +85,6 @@ const router = createBrowserRouter(
           </Suspense>
         }
       />
-
       <Route
         path="blogs/2"
         element={
@@ -87,7 +93,6 @@ const router = createBrowserRouter(
           </Suspense>
         }
       />
-
       <Route
         path="blogs/3"
         element={

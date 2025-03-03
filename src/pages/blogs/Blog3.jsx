@@ -1,8 +1,5 @@
-// pages/blogs/Blog3.jsx
 import React from 'react';
-import { Helmet } from 'react-helmet';
-
-// If you have a dedicated image for Blog3, import it here:
+import SeoHelmet from '../../components/SeoHelmet'; // Adjust path as needed
 import blogImage from '../../images/blog3.webp';
 
 // Subcomponents
@@ -18,11 +15,11 @@ const Blog3 = () => {
   const blogDescription = `
     Selecting the perfect hot water system can feel overwhelming. 
     In this guide, we break down the pros, cons, and key considerations for 
-    different types of hot water units—from gas and electric to solar and heat pump systems. 
+    different types of hot water units—from gas and electric to solar and heat pumps. 
     Find out how to weigh factors like energy efficiency, household size, and budget 
     to make the best decision for your home.
-  `;
-  const blogUrl = 'https://example.com/blogs/3'; // Update to actual URL
+  `.trim();
+  const blogUrl = 'https://sydneybackflowplumbing.com.au/blogs/3'; // Update if needed
   const blogPublishDate = '2025-01-03';
 
   // JSON-LD for schema.org
@@ -34,7 +31,7 @@ const Blog3 = () => {
     "url": blogUrl,
     "author": {
       "@type": "Person",
-      "name": "Author Name" // Replace as necessary
+      "name": "Author Name" // Replace if needed
     },
     "datePublished": blogPublishDate,
     "publisher": {
@@ -42,11 +39,10 @@ const Blog3 = () => {
       "name": "Sydney Backflow & Plumbing",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://sydneybackflowplumbing.com.au/favicon.svg" // Replace if needed
+        "url": "https://sydneybackflowplumbing.com.au/favicon.svg"
       }
     },
-    // If you'd like, you can include the image:
-    "image": "https://example.com/images/blog3.webp"
+    "image": "https://sydneybackflowplumbing.com.au/images/blog3.webp" 
   };
 
   // ──────────────────────────────────────
@@ -297,14 +293,12 @@ const Blog3 = () => {
       className="bg-white-0 responsivePad font-satoshi lg:py-16 md:py-12 py-10"
       aria-label={blogTitle}
     >
-      {/* Helmet for meta tags & JSON-LD */}
-      <Helmet>
-        <title>{blogTitle} | Sydney Backflow & Plumbing</title>
-        <meta name="description" content={blogDescription} />
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLdBlogPost)}
-        </script>
-      </Helmet>
+      <SeoHelmet
+        title={`${blogTitle} | Sydney Backflow & Plumbing`}
+        description={blogDescription}
+        canonicalUrl={blogUrl}
+        jsonSchema={jsonLdBlogPost}
+      />
 
       {/* Blog Title */}
       <h1 className="h1 text-center font-satoshi-black">{blogTitle}</h1>

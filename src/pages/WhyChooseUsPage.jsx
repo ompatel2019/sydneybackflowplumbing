@@ -11,16 +11,17 @@ const WhyChooseUsPage = () => {
   const jsonLdWhyChooseUsPage = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Why Choose Sydney Backflow and Plumbing | Trusted Wetherill Park & Sydney Plumbers",
-    "description": "Discover why our guaranteed workmanship, 20+ years of experience, and 24/7 emergency service set us apart in Wetherill Park & Sydney.",
-    "url": "https://sydneybackflowplumbing.com.au/whychooseus"
+    "name": "Why Choose Us",
+    "description": "Discover our guaranteed workmanship, 20+ years of experience, and 24/7 emergency service in Wetherill Park & Sydney.",
+    "url": "https://sydneybackflowplumbing.com.au/why-choose-us"
   };
 
   return (
     <>
       <SeoHelmet
-        title="Why Choose Sydney Backflow and Plumbing | Trusted Wetherill Park & Sydney Plumbers"
-        description="Discover why our guaranteed workmanship, 20+ years of experience, and 24/7 emergency service set us apart in Wetherill Park & Sydney."
+        title="Why Choose Us"
+        description="Discover our guaranteed workmanship, 20+ years of experience, and 24/7 emergency service in Wetherill Park & Sydney."
+        canonicalUrl="https://sydneybackflowplumbing.com.au/why-choose-us"
         jsonSchema={jsonLdWhyChooseUsPage}
       />
 

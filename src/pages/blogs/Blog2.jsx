@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SeoHelmet from '../../components/SeoHelmet'; // Adjust path as needed
 import blogImage from '../../images/blog2.webp'; // The new image for Blog2
 
 // Subcomponents
@@ -16,8 +16,8 @@ const Blog2 = () => {
     Blocked or slow drains can quickly escalate into costly plumbing issues. 
     In this article, discover why consistent drain cleaning is so essential 
     and learn simple steps to keep your home’s plumbing running smoothly.
-  `;
-  const blogUrl = 'https://yourwebsite.com/blogs/2'; // Update to your actual URL
+  `.trim();
+  const blogUrl = 'https://sydneybackflowplumbing.com.au/blogs/2'; // Update if needed
   const blogPublishDate = '2025-01-02';
 
   // JSON-LD for schema.org
@@ -26,19 +26,15 @@ const Blog2 = () => {
     "@type": "BlogPosting",
     "headline": blogTitle,
     "image": blogImage,
-    "description": blogDescription.trim(),
-    "author": {
-      "@type": "Person",
-      "name": "John Plumber" // Replace with actual author or organization name
-    },
+    "description": blogDescription,
     "url": blogUrl,
     "datePublished": blogPublishDate,
     "publisher": {
       "@type": "Organization",
-      "name": "Sydney Backflow & Plumbing", // Or your actual company name
+      "name": "Sydney Backflow & Plumbing",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://sydneybackflowplumbing.com.au/favicon.svg" // Replace if needed
+        "url": "https://sydneybackflowplumbing.com.au/favicon.svg"
       }
     }
   };
@@ -260,12 +256,12 @@ const Blog2 = () => {
       className="bg-white-0 responsivePad font-satoshi lg:py-16 md:py-12 py-10"
       aria-label={blogTitle}
     >
-      {/* Helmet for meta tags & JSON-LD */}
-      <Helmet>
-        <title>{blogTitle} | Sydney Backflow & Plumbing</title>
-        <meta name="description" content={blogDescription} />
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-      </Helmet>
+      <SeoHelmet
+        title={`${blogTitle} | Sydney Backflow & Plumbing`}
+        description={blogDescription}
+        canonicalUrl={blogUrl}
+        jsonSchema={jsonLd}
+      />
 
       {/* Blog Title */}
       <h1 className="h1 text-center font-satoshi-black">{blogTitle}</h1>
