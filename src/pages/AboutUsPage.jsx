@@ -27,7 +27,7 @@ const AboutUsPage = () => {
       />
 
       <PageTitle
-        pageTitle="About Us - Sydney Backflow and Plumbing"
+        pageTitle="About Us"
         pageRoute="home / about us"
         dividerBackground="bg-white-0"
         dividerFill="#2A2A2A"

@@ -25,7 +25,7 @@ const ServicesPage = () => {
       />
 
       <PageTitle
-        pageTitle="Services - Sydney Backflow and Plumbing"
+        pageTitle="Services"
         pageRoute="home / services"
         dividerBackground="bg-primary-0"
         dividerFill="#FAFAFA"

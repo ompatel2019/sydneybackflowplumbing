@@ -27,7 +27,7 @@ const ContactPage = () => {
       />
 
       <PageTitle
-        pageTitle="Contact Us - Sydney Backflow and Plumbing"
+        pageTitle="Contact Us"
         pageRoute="home / contact"
         dividerBackground="bg-primary-0"
         dividerFill="#FAFAFA"
