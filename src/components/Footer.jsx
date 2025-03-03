@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <div className="responsivePad pt-10 bg-white-0 p font-satoshi-medium">
       <div className="flex justify-between py-4">
-      <img src={logo} alt="Sydney Backflow and Plumbing Logo" class="2xl:w-24 lg:w-20 w-16 h-auto" width="384" height="auto"/>
+      <img src={logo} alt="Sydney Backflow and Plumbing Logo" className="2xl:w-24 lg:w-20 w-16 h-auto" width="384" height="auto"/>
 
         {/* <div className="flex space-x-2">
           {topBarLinksLeft.map((link, linkIndex) => (
