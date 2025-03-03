@@ -20,14 +20,14 @@ const ContactPage = () => {
   return (
     <>
       <SeoHelmet
-        title="Contact Us"
+        title="Contact Us - Sydney Backflow and Plumbing"
         description="Get in touch for round-the-clock plumbing in Wetherill Park & Sydney. Request a quote or emergency help."
         canonicalUrl="https://sydneybackflowplumbing.com.au/contact-us"
         jsonSchema={jsonLdContactPage}
       />
 
       <PageTitle
-        pageTitle="Contact Us"
+        pageTitle="Contact Us - Sydney Backflow and Plumbing"
         pageRoute="home / contact"
         dividerBackground="bg-primary-0"
         dividerFill="#FAFAFA"

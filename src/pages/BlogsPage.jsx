@@ -13,7 +13,7 @@ const BlogsPage = () => {
   const jsonLdBlogsPage = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": "Blogs",
+    "name": "Blogs - Sydney Backflow and Plumbing",
     "description": "Explore our latest posts on plumbing tips, industry insights, and expert advice for Wetherill Park & Sydney.",
     "url": "https://sydneybackflowplumbing.com.au/blogs"
   };
@@ -21,7 +21,7 @@ const BlogsPage = () => {
   return (
     <>
       <SeoHelmet
-        title="Blogs"
+        title="Blogs - Sydney Backflow and Plumbing"
         description="Read our latest posts on plumbing tips, industry insights, and expert advice for Wetherill Park & Sydney."
         canonicalUrl="https://sydneybackflowplumbing.com.au/blogs"
         jsonSchema={jsonLdBlogsPage}
