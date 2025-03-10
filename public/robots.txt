@@ -1,4 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /assets/
+
 
 Sitemap: https://sydneybackflowplumbing.com.au/sitemap.xml
