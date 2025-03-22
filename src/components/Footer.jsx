@@ -1,8 +1,5 @@
 import React from 'react';
-import { HashLink } from 'react-router-hash-link';
-import { BsFacebook } from "react-icons/bs";
-import { IoLogoGoogle } from "react-icons/io5";
-import logo from '../images/logoDark.svg';
+import logo from '../images/logo.svg';
 
 const Footer = () => {
   const linkClass = 'hover:underline transition-all p';

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { FiMenu } from 'react-icons/fi';
 import { RxCross2 } from 'react-icons/rx';
-import logo from '../images/logoDark.svg';
+import logo from '../images/logo.svg';
 
 const Navbar = () => {
   const navbarLinks = [
